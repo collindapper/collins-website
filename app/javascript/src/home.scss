@@ -1,0 +1,89 @@
+// GENERAL
+
+
+// NAVIGATION BAR
+.navbarNameWeb {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #1E1E1E;
+}
+
+/* Mobile Navbar */
+@media only screen and (max-width: 1405px) {
+  .nav-link:hover,
+  .nav-link:active {
+    color: #E18700;
+  }
+}
+
+@media only screen and (max-width: 1405px) {
+  .hamburger-toggle{
+    display:block;
+    position: relative;
+    background-color: #1E1E1E;
+    width: 60px; 
+    height: 60px; 
+    border:none;
+  }
+
+  /* give the span element and related pseudo-elements the appearance of white lines */
+  .hamburger-icon,
+  .hamburger-icon::before,
+  .hamburger-icon::after {
+    position: absolute;
+    width: 30px; 
+    height: 2px;
+    border-radius: 4px;
+    background-color: white;
+  }
+
+  /* center the span element in the middle of its containing button */
+  .hamburger-icon {
+    top: calc(50% - 2px);
+    left: calc(50% - 15px);
+  }
+
+  /* position the two pseudo-elements to the very left */
+  .hamburger-icon::before,
+  .hamburger-icon::after {
+    content: "";
+    left: 0;
+  }
+
+  /* this is the top dash of the hamburger */
+  .hamburger-icon::before {
+    bottom: 8px;
+  }
+
+  /* this is the bottom dash of the hamburger */
+  .hamburger-icon::after {
+    top: 8px;
+  }
+}
+
+.nav-item {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
+
+
+// MAIN BODY
+.fontSecondary {
+  font-family: 'Noto Serif', serif;
+  font-size: 20px;
+}
+
+.fontPrimary {
+  font-family: 'Oswald', sans-serif;
+  font-size: 100px;
+}
+
+.mainContent {
+  background-color: #424242;
+  height: 100vh;
+}
+
+// INTERACTIVE SKILL GLOBE

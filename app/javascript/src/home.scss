@@ -83,7 +83,37 @@
 
 .mainContent {
   background-color: #424242;
-  height: 100vh;
+  //height: 100vh;
 }
 
 // INTERACTIVE SKILL GLOBE
+.tagcloud {
+  font-family: 'Oswald', sans-serif;  
+  font-size: 30px;
+  font-weight: 1000;
+}
+.tagcloud--item:hover {
+  color: white;
+}
+
+// WORK SECTION
+// .workHeading {
+//  font-family: 'Oswald', sans-serif;  
+//  font-size: 300px;
+//  margin: 3rem;
+//  position: absolute;
+//  bottom: 1;
+//  z-index: 0;
+//  -webkit-transform: transform(100px);
+//  color: #c6afaf;
+//}
+
+// FOOTER
+footer {
+  background-color: #424242;
+}
+
+.footerItem {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}

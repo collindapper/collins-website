@@ -116,6 +116,31 @@ class Layout extends React.Component {
         <div className="mainContent">
           {this.props.children}
         </div>
+
+        {/* Footer */}
+        <footer className="sticky-bottom">
+          <div className="container footer">
+            <div className="d-flex row">
+              <div className="col-6">
+                <p className="footerItem text-white">Developed by Collin Dapper</p>
+              </div>
+              <div className="col-6">
+                <ul className="d-flex navbar-nav list-group-horizontal justify-content-end">
+                  <li className="nav-item me-2">
+                    <a className="nav-link text-white " href="#"><i className="fa-brands fa-linkedin"></i></a>
+                  </li>
+                  
+                  <li className="nav-item me-2">
+                    <a className="nav-link text-white"href="#"><i className="fa-brands fa-github"></i></a>
+                  </li>
+                  <li className="nav-item me-2">
+                    <a className="nav-link text-white" href="#"><i className="fa-solid fa-circle-user"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
       </React.Fragment>
     )
   }

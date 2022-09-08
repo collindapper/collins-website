@@ -23,7 +23,7 @@ class Home extends React.Component {
       keep: true,
     });
 
-    var colors = ['#4285F4', '01A6F0', "FF1E1E", "07AE17"];
+    var colors = ['#4285F4', '#01A6F0', "#FF1E1E", "#07AE17", '#9B05DB', '#EE8F00'];
     var random_color = colors[Math.floor(Math.random() * colors.length)];
     document.querySelector('.content').style.color = random_color;
 
@@ -37,13 +37,13 @@ class Home extends React.Component {
         <div className="d-flex mainContent container">
           <div className="col-md-5 col-12 my-md-auto my-5">
             <Fade left>
-            <h3 className="fontSecondary text-white text-start mb-0 pb-0">My name is,</h3>
-            <h1 className="fontPrimary text-white navbarNameWeb Display-1 text-start mt-0 pt-0">Collin Dapper</h1>
+            <h3 className="fontSecondary text-black text-start mb-0 pb-0">My name is,</h3>
+            <h1 className="fontPrimary text-black navbarNameWeb Display-1 text-start mt-0 pt-0">Collin Dapper</h1>
             </Fade>
             <br/>
             <Fade left>
-            <h3 className="fontSecondary text-white text-start mb-0 pb-0">I am a,</h3>
-            <h1 className="fontPrimary text-white display-3 text-start">Full-Stack Developer</h1>
+            <h3 className="fontSecondary text-black text-start mb-0 pb-0">I am a,</h3>
+            <h1 className="fontPrimary text-black display-3 text-start">Full-Stack Developer</h1>
             </Fade>
           </div>
 
@@ -54,9 +54,12 @@ class Home extends React.Component {
           </div>
         </div>
 
-        <div className="d-flex container row mx-auto border-top">
+        <div className="position-relative container row mx-auto border-top">
           <div className="workHeading">
             <strong>Work</strong>
+          </div>
+          <div>
+
           </div>
         </div>
       </Layout>

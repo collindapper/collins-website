@@ -73,7 +73,7 @@
 // MAIN BODY
 .fontSecondary {
   font-family: 'Noto Serif', serif;
-  font-size: 20px;
+  //font-size: 20px;
 }
 
 .fontPrimary {
@@ -83,7 +83,7 @@
 
 .mainContent {
   background-color: #424242;
-  height: 100%;
+  // height: 87vh;
 }
 
 // INTERACTIVE SKILL GLOBE
@@ -100,7 +100,50 @@
 .workHeading {
   font-family: 'Oswald', sans-serif;  
   font-size: 100px;
+}
 
+.imageContainer {
+  position: relative;
+  width: auto;
+  height: 300px;
+}
+
+.projectImage {
+  opacity: 1;
+  display: block;
+  width: 250px;
+  height: 250px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imageContainer:hover .projectImage {
+  opacity: 0.3;
+}
+
+.imageContainer:hover .middle {
+  opacity: 1;
+}
+
+.imageText {
+  background-color: #424242;
+  color: white;
+  font-size: 16px;
+}
+
+.projectHomeLink {
+  text-decoration: none;
 }
 
 // FOOTER

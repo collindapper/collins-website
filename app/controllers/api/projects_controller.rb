@@ -1,5 +1,5 @@
 module Api
-  class PropertiesController < ApplicationController
+  class ProjectsController < ApplicationController
     def index
       @projects = Project.order(created_at: :desc)
       return render json: { error: 'not_found' }, status: :not_found if !@projects
@@ -48,7 +48,7 @@ module Api
     private
 
       def project_params
-        params.require(:project).permit(:title, :description, :date_completed, :live_url, :github_url, images: [])
+        params.require(:project).permit(:title, :description, :date_completed, :live_url, :github_url, :images)
       end
 
   end

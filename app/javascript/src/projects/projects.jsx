@@ -94,28 +94,31 @@ class Projects extends React.Component {
           <div>
             {userProjects.map(project => {
               return (
-                <div key={project.id} id={project.id} className="listings-wrap p-4 mb-3">
+                <div key={project.id} id={project.id} className="projects-wrap p-4 mb-3 rounded shadow-lg">
                   <div className="row d-flex">
                     <div className="col-md-4">
-                      <div className="property-image rounded" style={{ backgroundImage: `url(${project.images})` }} />
+                      <div className="project-image rounded" style={{ backgroundImage: `url(${project.images})` }} />
                       </div>
                     <div className="col-md-8">
                       <div className="row d-flex flex-column px-3">
-                        <h5 className="mb-2">{project.title}</h5>
+                        <h2 className="mb-0">{project.title}</h2>
                         <div className="d-flex">
-                          <p className="mb-0 pr-1 text-secondary">{project.date_completed}</p>
-                        </div>
-                        <div className="d-flex mb-2">
-                          <p className="mb-0 text-secondary">{project.live_url}</p>
-                          <p className="mb-0 text-secondary">{project.github_url}</p>
+                          <p className="text-secondary">{project.date_completed}</p>
                         </div>
                         <p className="description-short mb-2 text-secondary">{project.description}</p>
+
+                        <button className="btn btn-primary w-100 mt-5 mb-2"><a className="projectLinks" href={project.live_url}></a>Live Site</button>
+
+                        <button className="btn btn-primary w-100 "><a className="mb-0 projectLinks " href={project.github_url}></a>GitHub Repo</button>
                         
-                        <div className="d-flex">
-                          <a className="btn btn-danger btn-sm btn-edit me-2 mt-2" role="button" href="#">Edit property</a>
-                          <a className="btn btn-danger btn-sm btn-edit me-2 mt-2" role="button" href="#">View property reservations</a>
-                          <button type="submit" className="btn btn-danger btn-sm btn-delete ml-auto me-2 mt-2" onClick={this.deleteProject}>Delete property</button>
-                        </div>
+                        
+                        {(authenticated)
+                        ?
+                        <button type="submit" className="btn btn-outline-danger btn-delete ml-auto me-2 mt-5" onClick={this.deleteProject}>Delete Project</button>
+                        :
+                        <div></div>
+                        }
+
                       </div>
                     </div>
                   </div>

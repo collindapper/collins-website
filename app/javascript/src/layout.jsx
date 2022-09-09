@@ -66,7 +66,7 @@ class Layout extends React.Component {
         {(authenticated)
 
         ?
-        <nav className="navbar navbar-expand-lg shadow">
+        <nav className="navbar navbar-expand-md shadow sticky-top">
           <div className="navbar container d-none d-md-flex justify-content-center">         
               <div className="d-flex col-4">
                 <ul className="d-flex navbar-nav me-auto">
@@ -109,7 +109,7 @@ class Layout extends React.Component {
               </div>      
           </div>
 
-        <div className="navbar container d-flex d-md-none">
+        <div className="navbar container d-flex d-md-none sticky-top">
           <a className="d-md-none d-flex navbar-brand text-white" href="#">COLLIN<strong>DAPPER</strong></a>
             <button className="d-md-none hamburger-toggle" type="button" onClick={this.toggleNavbarOpen}>
               <span className="hamburger-icon"></span>
@@ -160,7 +160,7 @@ class Layout extends React.Component {
             }
         </nav>
         :
-        <nav className="navbar navbar-expand-lg shadow">
+        <nav className="navbar navbar-expand-md shadow sticky-top">
           <div className="navbar container d-none d-md-flex justify-content-center">
               <div className="d-flex col-4">
                 <ul className="d-flex navbar-nav me-auto">
@@ -200,7 +200,7 @@ class Layout extends React.Component {
               </div>
           </div>
 
-        <div className="navbar container d-flex d-md-none">
+        <div className="navbar container d-flex d-md-none sticky-top">
           <a className="d-md-none d-flex navbar-brand text-white" href="#">COLLIN<strong>DAPPER</strong></a>
             <button className="d-md-none hamburger-toggle" type="button" onClick={this.toggleNavbarOpen}>
               <span className="hamburger-icon"></span>

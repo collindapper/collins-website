@@ -1,7 +1,7 @@
 class Project < ApplicationRecord
   belongs_to :user
 
-  has_many_attached :images, dependent: :destroy
+  has_one_attached :images
 
   validates :title, presence: true
   validates :description, presence: true 

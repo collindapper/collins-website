@@ -40,8 +40,8 @@ class AddProjectWidget extends React.Component {
     formData.append('project[live_url]', this.state.live_url)
     formData.append('project[github_url]', this.state.github_url)
 
-    if (this.state.image_url !== null) {
-      formData.append('project[image]', this.state.images, this.state.images.name);
+    if (this.state.images_url !== null) {
+      formData.append('project[images]', this.state.images, this.state.images.name);
     }
 
     fetch('/api/projects', safeCredentialsFormData({
@@ -52,7 +52,7 @@ class AddProjectWidget extends React.Component {
       .then(data => {
         console.log('data', data)
         this.setState({
-          username: data.property.user.username,
+          username: data.project.user.username,
         })
 
         const params = new URLSearchParams(window.location.search)
@@ -132,7 +132,7 @@ class AddProjectWidget extends React.Component {
                 <label htmlFor="projectImage" className="col-form-label text-white placeholderFont">Upload photos</label>
               </div>
               <div className="col-md-5 col-10">
-                <input className="form-control placeholderFont" id="files" type="file" name="images" accept="image/*" multiple onChange={this.onFileChange} />
+                <input className="form-control placeholderFont" type="file" name="images" accept="image/*" onChange={this.onFileChange} />
               </div>
             </div>
 

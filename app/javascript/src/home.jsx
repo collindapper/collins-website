@@ -17,8 +17,8 @@ class Home extends React.Component {
     
     var tagCloud = TagCloud('.content', myTags,{
       radius: 400,
-      maxSpeed: 'fast',
-      initSpeed: 'fast',
+      maxSpeed: 'normal',
+      initSpeed: 'normal',
       direction: 135,
       keep: true,
     });

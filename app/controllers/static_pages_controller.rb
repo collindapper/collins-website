@@ -8,7 +8,6 @@ class StaticPagesController < ApplicationController
   end
 
   def projects
-    @data = { username: params[:username] }.to_json
     render 'projects'
   end
 

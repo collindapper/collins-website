@@ -182,6 +182,7 @@ class Layout extends React.Component {
               </div>
 
               <div className="d-flex col-4">
+                <a className="d-md-flex d-none navbar-brand text-white mx-auto" href="/">COLLIN<strong>DAPPER</strong></a>
               </div>
 
               <div className="d-flex col-4">
@@ -215,7 +216,7 @@ class Layout extends React.Component {
                     </a>
                   </li>
                   <li className="nav-item text-center">
-                    <a className="nav-link text-white"href="/work">Work</a>
+                    <a className="nav-link text-white"href="/projects">Work</a>
                   </li>
                   <li className="nav-item text-center">
                     <a className="nav-link text-white" href="/skills">Skills</a>

@@ -5,7 +5,7 @@ import { safeCredentials, handleErrors } from '@utils/fetchHelper';
 
 class LoginWidget extends React.Component {
   state = {
-    username: '',
+    email: '',
     password: '',
     error: '',
   }
@@ -26,7 +26,7 @@ class LoginWidget extends React.Component {
       method: 'POST',
       body: JSON.stringify({
         user: {
-          username: this.state.username,
+          email: this.state.email,
           password: this.state.password,
         }
       })
@@ -47,11 +47,11 @@ class LoginWidget extends React.Component {
   }
 
   render () {
-    const { username, password, error } = this.state;
+    const { email, password, error } = this.state;
     return (
       <React.Fragment>
         <form onSubmit={this.login}>
-          <input name="username" type="text" className="form-control form-control-lg mb-3 placeholderFont" placeholder="Username" value={username} onChange={this.handleChange} required />
+          <input name="email" type="text" className="form-control form-control-lg mb-3 placeholderFont" placeholder="Email" value={email} onChange={this.handleChange} required />
           <input name="password" type="password" className="form-control form-control-lg mb-3 placeholderFont" placeholder="Password" value={password} onChange={this.handleChange} required />
           <button type="submit" className="btn btn-primary btn-block placeholderFont w-100">Log in</button>
           {error && <p className="text-danger mt-2">{error}</p>}

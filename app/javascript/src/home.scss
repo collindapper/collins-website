@@ -83,7 +83,7 @@
 
 .mainContent {
   background-color: #424242;
-  // height: 87vh;
+  height: 100%;
 }
 
 // INTERACTIVE SKILL GLOBE
@@ -94,6 +94,12 @@
 }
 .tagcloud--item:hover {
   color: white;
+}
+
+@media (max-width: 1440px) {
+  .interactiveSphere {
+    overflow-x: hidden;
+  }
 }
 
 // WORK SECTION
@@ -111,8 +117,8 @@
 .projectImage {
   opacity: 1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   transition: .5s ease;
   backface-visibility: hidden;
 }

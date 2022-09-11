@@ -88,8 +88,7 @@ class SignupWidget extends React.Component {
           <button type="submit" className="btn btn-primary btn-block w-100 placeholderFont">Sign up</button>
         </form>
         <hr/>
-        <p className="mb-0 text-white">Already have an account?
-        <a className="text-primary" onClick={this.props.toggle}>Log in</a></p>
+        <p className="mb-0 text-white">Already have an account? <a className="text-primary" onClick={this.props.toggle}>Log in</a></p>
       </React.Fragment>
     )
   }

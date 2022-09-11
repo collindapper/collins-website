@@ -1,10 +1,10 @@
 import React from 'react';
 import Layout from '@src/layout';
 
-import './about.scss';
+import './skills.scss';
 import Slide from 'react-reveal/Slide';
 
-class About extends React.Component {
+class Skills extends React.Component {
 
   render() {
 
@@ -101,4 +101,4 @@ class About extends React.Component {
   }
 }
 
-export default About;
+export default Skills;

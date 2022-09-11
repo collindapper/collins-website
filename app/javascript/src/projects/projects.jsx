@@ -5,6 +5,7 @@ import AddProjectWidget from './addProjectWidget';
 
 import './projects.scss';
 import Slide from 'react-reveal/Slide';
+import Bounce from 'react-reveal/Bounce';
 
 class Projects extends React.Component {
   constructor(props) {
@@ -47,7 +48,7 @@ class Projects extends React.Component {
 
   deleteProject = (e) => {
     e.preventDefault();
-    let projectEl = e.target.closest(".listings-wrap")
+    let projectEl = e.target.closest(".projects-wrap")
     let projectId = projectEl.getAttribute('id')
 
     fetch(`/api/projects/${projectId}`, safeCredentials({
@@ -94,6 +95,7 @@ class Projects extends React.Component {
           <div>
             {userProjects.map(project => {
               return (
+                <Bounce right>
                 <div key={project.id} id={project.id} className="projects-wrap p-4 mb-3 rounded shadow-lg">
                   <div className="row d-flex">
                     <div className="col-md-4">
@@ -123,6 +125,7 @@ class Projects extends React.Component {
                     </div>
                   </div>
                 </div>
+                </Bounce>
               )
             })}
           </div>

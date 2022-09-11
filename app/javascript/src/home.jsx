@@ -4,6 +4,7 @@ import Layout from './layout';
 import { handleErrors } from '@utils/fetchHelper';
 
 import Fade from 'react-reveal/Fade';
+import Bounce from 'react-reveal/Bounce';
 import TagCloud from 'TagCloud';
 
 import './home.scss';
@@ -53,41 +54,51 @@ class Home extends React.Component {
     return (
       <Layout>
         <div className="d-flex mainContent container">
-          <div className="row">
-            <div className="col-xxl-5 col-11 my-md-auto my-5">
+            <div className="col-lg-5 col-12 my-md-auto my-5">
               <Fade left>
-              <h3 className="fontSecondary text-black text-start mb-0 pb-0">My name is,</h3>
-              <h1 className="fontPrimary text-black navbarNameWeb Display-1 text-start mt-0 pt-0">Collin Dapper</h1>
+              <h3 className="fontSecondary text-black text-lg-start text-center mb-0 pb-0">Hello,</h3>
+              <h1 className="fontPrimary text-black display-1 text-lg-start text-center mt-0 pt-0">I'm Collin,</h1>
               </Fade>
               <br/>
               <Fade left>
-              <h3 className="fontSecondary text-black text-start mb-0 pb-0">I am a,</h3>
-              <h1 className="fontPrimary text-black display-3 text-start">Full-Stack Developer</h1>
+
+              <h1 className="fontPrimary text-black display-4 text-lg-start text-center">Full-Stack Developer</h1>
               </Fade>
             </div>
 
-            <div className="col-xxl-6 col-10 my-lg-auto d-flex flex-wrap">
-              <Fade Big>
+            <div className="interactiveSphere col-lg-7 col-12 my-md-auto d-none d-lg-flex">
+              <Fade big>
               <span className="content"></span>
               </Fade>
             </div>
-          </div>
         </div>
 
-        <div className="container">
-          <div className="d-flex row">
-            <div className="d-flex flex-wrap col-md-8 col-12 justify-content-center">
+        <div className="container mt-md-5">
+          <div className="d-flex row border-top border-dark">
+            <Fade left>
+            <div className="d-flex col-12 col-md-3 justify-content-md-start justify-content-center pt-5">
+              <p className="fontPrimary display-1 text-black text-md-start"><strong>Work</strong></p>
+            </div>
+            </Fade>
+
+            
+            <div className="d-flex flex-wrap col-md-9 col-12 justify-content-md-end justify-content-center">
+            
               {userProjects.map(project => {
                 return (
-                    <div key={project.id} id={project.id} className="d-flex align-items-center  imageContainer">
+                  <Bounce right>
+                    <div key={project.id} id={project.id} className="d-flex align-items-center imageContainer mx-1">
                       <img src={project.images} className="projectImage img-responsive" />
                       <div className="middle">
-                        <a className="projectHomeLink" href="#"><div className="imageText py-3 px-3">View Project</div></a>
+                        <a className="projectHomeLink" href="/projects"><div className="imageText py-3 px-3">View Projects</div></a>
                       </div>
                     </div>
+                  </Bounce>
                 )
               })};
+              
             </div>
+            
           </div>
         </div>     
       </Layout>

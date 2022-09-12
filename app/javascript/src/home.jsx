@@ -54,7 +54,7 @@ class Home extends React.Component {
     return (
       <Layout>
         <div className="d-flex mainContent container">
-            <div className="col-lg-5 col-12 my-md-auto my-5">
+            <div className="col-lg-5 col-12 my-lg-auto my-5">
               <Fade left>
               <h3 className="fontSecondary text-black text-lg-start text-center mb-0 pb-0">Hello,</h3>
               <h1 className="fontPrimary text-black display-1 text-lg-start text-center mt-0 pt-0">I'm Collin,</h1>

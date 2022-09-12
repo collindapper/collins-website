@@ -1,5 +1,17 @@
-// GENERAL
+// MAIN BODY
+.fontSecondary {
+  font-family: 'Noto Serif', serif;
+}
 
+.fontPrimary {
+  font-family: 'Oswald', sans-serif;
+  font-size: 100px;
+}
+
+.mainContent {
+  background-color: #424242;
+  height: 100%;
+}
 
 // NAVIGATION BAR
 .navbarNameWeb {
@@ -67,23 +79,6 @@
 .nav-item {
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
-}
-
-
-// MAIN BODY
-.fontSecondary {
-  font-family: 'Noto Serif', serif;
-  //font-size: 20px;
-}
-
-.fontPrimary {
-  font-family: 'Oswald', sans-serif;
-  font-size: 100px;
-}
-
-.mainContent {
-  background-color: #424242;
-  height: 100%;
 }
 
 // INTERACTIVE SKILL GLOBE

@@ -32,7 +32,6 @@ class AddProjectWidget extends React.Component {
   submitProject = (e) => {
     e.preventDefault();
 
-    // Create an object of formData
     let formData = new FormData();
     formData.append('project[title]', this.state.title)
     formData.append('project[description]', this.state.description)

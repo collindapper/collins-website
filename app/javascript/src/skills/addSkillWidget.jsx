@@ -19,17 +19,9 @@ class AddSkillWidget extends React.Component {
     })
   }
 
-  // On file select (from the pop up)
-  onFileChange = (e) => {
-    this.setState({ 
-      [e.target.name]: e.target.files[0],
-    });
-  };
-
   submitSkill = (e) => {
     e.preventDefault();
 
-    // Create an object of formData
     let formData = new FormData();
     formData.append('skill[title]', this.state.title)
     formData.append('skill[certification_url]', this.state.certification_url)
@@ -75,8 +67,6 @@ class AddSkillWidget extends React.Component {
                 <input type="text" id="projectTitle" className="form-control placeholderFont" name="title" placeholder="Skill" value={title} onChange={this.handleChange} />
               </div>
             </div>
-
-            <div className="divider my-3"></div>
 
             <div className="row align-items-center py-2 justify-content-center">
               <div className="col-md-5 col-10">

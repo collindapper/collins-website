@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { safeCredentials, handleErrors } from '@utils/fetchHelper';
 
 import './home.scss';
@@ -18,7 +17,6 @@ class Layout extends React.Component {
     fetch('/api/authenticated')
       .then(handleErrors)
       .then(data => {
-        // console.log(data)
         this.setState({
           authenticated: data.authenticated,
           username: data.username,
@@ -94,10 +92,10 @@ class Layout extends React.Component {
               <div className="d-flex col-4">
                 <ul className="navbar-nav ms-auto">
                   <li className="nav-item">
-                    <a className="nav-link text-white " href="#"><i className="fa-brands fa-linkedin"></i></a>
+                    <a className="nav-link text-white " href="https://www.linkedin.com/in/collin-dapper-a1b59a152/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
                   </li>             
                   <li className="nav-item">
-                    <a className="nav-link text-white"href="#"><i className="fa-brands fa-github"></i></a>
+                    <a className="nav-link text-white"href="https://github.com/collindapper" target="_blank"><i className="fa-brands fa-github"></i></a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link text-white" href="/login"><i className="fa-solid fa-circle-user"></i></a>
@@ -139,11 +137,11 @@ class Layout extends React.Component {
                 <div className="row mx-auto">
                   <ul className="d-flex navbar-nav list-group-horizontal justify-content-between">
                     <li className="nav-item">
-                      <a className="nav-link text-white " href="#"><i className="fa-brands fa-linkedin"></i></a>
+                      <a className="nav-link text-white " href="https://www.linkedin.com/in/collin-dapper-a1b59a152/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
                     </li>
                     
                     <li className="nav-item">
-                      <a className="nav-link text-white"href="#"><i className="fa-brands fa-github"></i></a>
+                      <a className="nav-link text-white"href="https://github.com/collindapper" target="_blank"><i className="fa-brands fa-github"></i></a>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link text-white" href="/login"><i className="fa-solid fa-circle-user"></i></a>
@@ -188,10 +186,10 @@ class Layout extends React.Component {
               <div className="d-flex col-4">
                 <ul className="navbar-nav ms-auto">
                   <li className="nav-item">
-                    <a className="nav-link text-white " href="#"><i className="fa-brands fa-linkedin"></i></a>
+                    <a className="nav-link text-white" href="https://www.linkedin.com/in/collin-dapper-a1b59a152/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link text-white"href="#"><i className="fa-brands fa-github"></i></a>
+                    <a className="nav-link text-white"href="https://github.com/collindapper" target="_blank"><i className="fa-brands fa-github"></i></a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link text-white" href="/login"><i className="fa-solid fa-circle-user"></i></a>
@@ -229,10 +227,10 @@ class Layout extends React.Component {
                 <div className="row mx-auto">
                   <ul className="d-flex navbar-nav list-group-horizontal justify-content-between">
                     <li className="nav-item">
-                      <a className="nav-link text-white " href="#"><i className="fa-brands fa-linkedin"></i></a>
+                      <a className="nav-link text-white " href="https://www.linkedin.com/in/collin-dapper-a1b59a152/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
                     </li>                  
                     <li className="nav-item">
-                      <a className="nav-link text-white"href="#"><i className="fa-brands fa-github"></i></a>
+                      <a className="nav-link text-white"href="https://github.com/collindapper" target="_blank"><i className="fa-brands fa-github"></i></a>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link text-white" href="/login"><i className="fa-solid fa-circle-user"></i></a>
@@ -260,14 +258,11 @@ class Layout extends React.Component {
               <div className="col-6">
                 <ul className="d-flex navbar-nav list-group-horizontal justify-content-end">
                   <li className="nav-item me-2">
-                    <a className="nav-link text-white " href="#"><i className="fa-brands fa-linkedin"></i></a>
+                    <a className="nav-link text-white " href="https://www.linkedin.com/in/collin-dapper-a1b59a152/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
                   </li>
                   
                   <li className="nav-item me-2">
-                    <a className="nav-link text-white"href="#"><i className="fa-brands fa-github"></i></a>
-                  </li>
-                  <li className="nav-item me-2">
-                    <a className="nav-link text-white" href="#"><i className="fa-solid fa-circle-user"></i></a>
+                    <a className="nav-link text-white" href="https://github.com/collindapper" target="_blank"><i className="fa-brands fa-github"></i></a>
                   </li>
                 </ul>
               </div>

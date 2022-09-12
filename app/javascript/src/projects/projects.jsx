@@ -24,7 +24,6 @@ class Projects extends React.Component {
     fetch('/api/authenticated')
       .then(handleErrors)
       .then(data => {
-        // console.log(data)
         this.setState({
           authenticated: data.authenticated,
           username: data.username,
@@ -33,8 +32,6 @@ class Projects extends React.Component {
   }
 
   getAllUserProjects() {
-    // const username = this.props.data.username;
-    // console.log(username)
 
     fetch('/api/projects/')
       .then(handleErrors)
@@ -109,9 +106,9 @@ class Projects extends React.Component {
                         </div>
                         <p className="description-short mb-2 text-secondary">{project.description}</p>
 
-                        <button className="btn btn-primary w-100 mt-5 mb-2"><a className="projectLinks" href={project.live_url}></a>Live Site</button>
+                        <a className="projectLinks btn btn-primary w-100 mt-5 mb-2" role="button" target="_blank" href={project.live_url}>Live Site</a>
 
-                        <button className="btn btn-primary w-100 "><a className="mb-0 projectLinks " href={project.github_url}></a>GitHub Repo</button>
+                        <a className="mb-0 projectLinks btn btn-primary w-100" role="button" target="_blank" href={project.github_url}>GitHub Repo</a>
                         
                         
                         {(authenticated)

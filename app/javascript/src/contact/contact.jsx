@@ -3,6 +3,7 @@ import Layout from '@src/layout';
 
 import './contact.scss';
 import Slide from 'react-reveal/Slide';
+import Fade from 'react-reveal/Fade';
 
 import location from './images/location.png'
 
@@ -21,6 +22,7 @@ class Contact extends React.Component {
             </Slide>
           </div>
 
+          <Slide right>
           <div className="col-12 col-lg-6 pt-3">
               <div className="d-flex col-12 justify-content-md-start justify-content-center mb-2">
                 <h3 className="text-center"><strong>Email </strong>collindapper@gmail.com</h3>
@@ -35,16 +37,13 @@ class Contact extends React.Component {
                 <h3 className="text-center"><strong>Location </strong>San Francisco Bay Area</h3>
               </div>
             </div>
+            </Slide>
 
+            <Fade bottom>
             <div className="d-flex col-12 justify-content-center mt-2">
               <img src={map} className="d-flex img-responsive map" />
             </div>
-          
-          
-            
-
-            
-          
+            </Fade>
         </div>
       </Layout>
     )

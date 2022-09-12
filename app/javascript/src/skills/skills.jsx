@@ -24,7 +24,6 @@ class Skills extends React.Component {
     fetch('/api/authenticated')
       .then(handleErrors)
       .then(data => {
-        // console.log(data)
         this.setState({
           authenticated: data.authenticated,
           username: data.username,
@@ -33,8 +32,6 @@ class Skills extends React.Component {
   }
 
   getAllUserSkills() {
-    // const username = this.props.data.username;
-    // console.log(username)
 
     fetch('/api/skills/')
       .then(handleErrors)
@@ -92,37 +89,32 @@ class Skills extends React.Component {
           {(userSkills.length != 0)
           
           ?
-          <div>
+          <div className="row d-flex justify-content-center">
             {userSkills.map(skill => {
               return (
                 <Bounce right>
-                <div key={skill.id} id={skill.id} className="skills-wrap p-4 mb-3 rounded shadow-lg">
-                  <div className="row d-flex">
-                    
-                    <div className="col-md-8">
-                      <div className="row d-flex flex-column px-3">
-                        <h2 className="mb-0">{skill.title}</h2>
+                <div key={skill.id} id={skill.id} className="skills-wrap p-4 mb-3 rounded shadow-lg col-10 col-md-6 col-xl-4">
+                    <div className="row d-flex flex-column px-3">
+                      <h2 className="mb-0">{skill.title}</h2>
 
-                        {(skill.certification_url !== 'NA')
-                        ?
-                        <button className="btn btn-primary w-100 mt-5 mb-2"><a className="skillLinks" href={skill.certification_url}></a>Certification PDF</button>
-                        :
-                        <div></div>
-                        }
+                      {(skill.certification_url !== 'NA')
+                      ?
+                      <a className="skillLinks btn btn-primary w-100 mt-5 mb-2" role="button" target="_blank" href={skill.certification_url}>Certification PDF</a>
+                      :
+                      <div className="mt-5"></div>
+                      }
 
-                        <button className="btn btn-primary w-100 "><a className="mb-0 skillLinks " href={skill.linkedin_url}></a>LinkedIn Endorsements</button>
-                        
-                        
-                        {(authenticated)
-                        ?
-                        <button type="submit" className="btn btn-outline-danger btn-delete ml-auto me-2 mt-5" onClick={this.deleteSkill}>Delete Skill</button>
-                        :
-                        <div></div>
-                        }
+                      <a className="mb-0 skillLinks btn btn-primary w-100" role="button" target="_blank" href={skill.linkedin_url}>LinkedIn Endorsements</a>
+                      
+                      
+                      {(authenticated)
+                      ?
+                      <button type="submit" className="btn btn-outline-danger btn-delete ml-auto me-2 mt-5" onClick={this.deleteSkill}>Delete Skill</button>
+                      :
+                      <div></div>
+                      }
 
-                      </div>
                     </div>
-                  </div>
                 </div>
                 </Bounce>
               )

@@ -10,13 +10,11 @@
 // PROJECTS PAGE
 
 .projects-wrap {
-  // background-color: black;
   font-family: 'Noto Serif', serif;
-  // font-size: 20px;
 }
 
 .project-image {
-  padding-top: calc(1 / 1 * 100%); /* aspect ratio 1:1 */
+  padding-top: calc(1 / 1 * 100%); 
   background-size: cover;
   background-position: center;
 }

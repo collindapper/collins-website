@@ -7,7 +7,6 @@ Rails.application.routes.draw do
     get '/skills' => 'static_pages#skills'
     get '/contact' => 'static_pages#contact'
 
-    get '/:username/add-project'  => 'static_pages#add_project'
     get '/login' => 'static_pages#login'
 
     namespace :api do
@@ -23,6 +22,11 @@ Rails.application.routes.draw do
       post '/projects' => 'projects#create'
       get '/projects/' => 'projects#index'
       delete '/projects/:id' => 'projects#destroy'
+
+      # SKILLS
+      post '/skills' => 'skills#create'
+      get '/skills/' => 'skills#index'
+      delete '/skills/:id' => 'skills#destroy'
       
     end
 end

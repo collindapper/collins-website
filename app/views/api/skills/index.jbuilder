@@ -1,0 +1,9 @@
+json.skills do
+  json.array! @skills do |skill|
+    json.id skill.id
+    json.title skill.title
+    json.certification_url skill.certification_url
+    json.linkedin_url skill.linkedin_url
+
+  end
+end

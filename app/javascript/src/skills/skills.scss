@@ -1,0 +1,30 @@
+// ADD PROJECT WIDGET
+.formBox {
+  background-color: black;
+}
+
+.placeholderFont {
+  font-family: 'Noto Serif', serif;
+}
+
+// PROJECTS PAGE
+
+.skills-wrap {
+  // background-color: black;
+  font-family: 'Noto Serif', serif;
+  // font-size: 20px;
+}
+
+.description-short {
+  width: 100%;
+  line-height: 1.5em;
+  height: 4.5em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.skillLinks {
+  text-decoration: none;
+}

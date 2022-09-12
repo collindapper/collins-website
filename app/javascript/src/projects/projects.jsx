@@ -62,7 +62,7 @@ class Projects extends React.Component {
       })
       .catch(error => {
         this.setState({
-          error: 'Could not delete property.',
+          error: 'Could not delete project.',
         })
       })
   }

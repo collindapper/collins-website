@@ -1,6 +1,9 @@
 {
   "name": "personal-portfolio-fs",
   "private": true,
+  "engine": {
+    "node": "~12.22"
+  },
   "dependencies": {
     "@babel/preset-react": "^7.18.6",
     "@rails/actioncable": "^6.0.0",

@@ -48,15 +48,30 @@ class Home extends React.Component {
           </div>
         </div>
 
+
+        <div className="d-flex row container mx-auto">
+          
+            {userProjects.slice(0, 2).map(project => {
+              return (
+                <div className="col-6 projectContainer">
+                <div key={project.id} id={project.id} className="card">
+                  <img src={project.images} className="cardImage px-2 py-2" />
+                  <div className="container descriptionContainer">
+                    <p>Collin Dapper</p>
+                  </div>
+                </div>
+                </div>
+              )
+            })}
+        </div>
         
-        <div className="container border">
-        <p className="titleBox display-1 text-black text-md-start"><strong>Projects</strong></p>
-          <div className="d-flex row mx-auto">
+        
+          <div className="d-flex row container mx-auto">
             
-              {userProjects.slice(0, 3).map(project => {
+              {userProjects.slice(0, 2).map(project => {
                     return (
                       <Bounce right>
-                        <div className="d-flex container flex-wrap col-md-4 col-12 justify-content-between">              
+                        <div className="d-flex flex-wrap col-md-4 col-12 justify-content-between">              
                         <div key={project.id} id={project.id} className="d-inline-flex align-items-center imageContainer mx-1">                  
                           <img src={project.images} className="projectImage img-responsive" />
                           <div className="middle">
@@ -69,7 +84,7 @@ class Home extends React.Component {
                   })}
               
           </div>
-        </div>
+        
         
 
 

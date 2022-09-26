@@ -106,7 +106,7 @@ class Layout extends React.Component {
           </div>
 
         <div className="container d-flex d-md-none sticky-top">
-          <a className="d-md-none d-flex navbar-brand text-black" href="#">COLLIN<strong>DAPPER</strong></a>
+          <a className="d-md-none d-flex navbar-brand text-black" href="/">COLLIN<strong>DAPPER</strong></a>
             <button className="d-md-none hamburger-toggle" type="button" onClick={this.toggleNavbarOpen}>
               <span className="hamburger-icon"></span>
             </button>
@@ -120,7 +120,6 @@ class Layout extends React.Component {
                       About
                     </a>
                   </li>
-
                   <li className="nav-item text-center">
                     <a className="nav-link text-black" href='/projects'>Projects</a>
                   </li>
@@ -194,7 +193,7 @@ class Layout extends React.Component {
           </div>
 
         <div className="container d-flex d-md-none sticky-top">
-          <a className="d-md-none d-flex navbar-brand text-black" href="#">COLLIN<strong>DAPPER</strong></a>
+          <a className="d-md-none d-flex navbar-brand text-black" href="/">COLLIN<strong>DAPPER</strong></a>
             <button className="d-md-none hamburger-toggle" type="button" onClick={this.toggleNavbarOpen}>
               <span className="hamburger-icon"></span>
             </button>

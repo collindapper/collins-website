@@ -23,9 +23,16 @@ class Contact extends React.Component {
           </div>
 
           <Slide right>
-            <div className="d-flex container mapContainer" style={{ backgroundImage: `url(${map})` }}>
-              <div className="shadow-lg rounded my-3 col-11 col-lg-5 ms-auto contactForm">
-                <h1>Collin Dapper</h1>
+            <div className="d-flex container mapContainer shadow-lg" style={{ backgroundImage: `url(${map})` }}>
+              <div className="shadow-lg rounded my-3 col-11 col-md-5 ms-lg-auto mx-auto mx-lg-0 pt-5 contactForm">
+                <h2 className="text-center mt-3">Location</h2>
+                <h5 className="text-center mb-3">San Francisco Bay Area</h5>
+                <h2 className="text-center mt-3">Email</h2>
+                <h5 className="text-center mb-3">collindapper@gmail.com</h5>
+                <h2 className="text-center mt-3">GitHub</h2>
+                <h5 className="text-center mb-3">github.com/collindapper</h5>
+                <h2 className="text-center mt-3">LinkedIn</h2>
+                <h5 className="text-center mb-3">linkedin.com/in/collin-dapper-a1b59a152/</h5>
               </div>
             </div>
           </Slide>

@@ -5,6 +5,7 @@ import { handleErrors } from '@utils/fetchHelper';
 
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
+import Tada from 'react-reveal/Tada';
 import TagCloud from 'TagCloud';
 import './home.scss';
 
@@ -39,8 +40,12 @@ class Home extends React.Component {
         <div className="HomeBody">
           <div className="row heroSection container mx-auto d-flex align-content-center">
             <div className="blurSection mx-auto">
-              <p className="display-1 text-center"><strong>Welcome,</strong></p>
+              <Fade left>
+              <p className="display-1 text-center fontPrimary"><strong>Welcome,</strong></p>
+              </Fade>
+              <Fade right>
               <p className="display-6 text-center subHeading mb-auto">I'm Collin Dapper. Full-Stack Developer.</p>
+              </Fade>
               <div className="d-flex arrow bounce justify-content-center mt-5">
                 <i class="fa-solid fa-chevron-down"></i>
               </div>
@@ -53,68 +58,22 @@ class Home extends React.Component {
           
             {userProjects.slice(0, 2).map(project => {
               return (
-                <div className="col-6 projectContainer">
+                <Bounce left>
+                <a className="col-12 col-md-6 projectContainer mb-5" href="/projects">
                 <div key={project.id} id={project.id} className="card">
+                <Tada>
+                <p className="badge"><span className="badgeFont">Recent Projects</span></p>
+                </Tada>
                   <img src={project.images} className="cardImage px-2 py-2" />
-                  <div className="container descriptionContainer">
-                    <p>Collin Dapper</p>
+                  <div className="d-flex container descriptionContainer mx-auto">
+                    <p className="mx-auto display-6 text-black">{project.title}</p>
                   </div>
                 </div>
-                </div>
+                </a>
+                </Bounce>
               )
             })}
-        </div>
-        
-        
-          <div className="d-flex row container mx-auto">
-            
-              {userProjects.slice(0, 2).map(project => {
-                    return (
-                      <Bounce right>
-                        <div className="d-flex flex-wrap col-md-4 col-12 justify-content-between">              
-                        <div key={project.id} id={project.id} className="d-inline-flex align-items-center imageContainer mx-1">                  
-                          <img src={project.images} className="projectImage img-responsive" />
-                          <div className="middle">
-                            <a className="projectHomeLink" href="/projects"><div className="imageText py-3 px-3">View Projects</div></a>
-                          </div>     
-                        </div>
-                        </div>      
-                      </Bounce>
-                    )
-                  })}
-              
-          </div>
-        
-        
-
-
-        <div className="container mt-md-5 shadow-lg">
-        
-        <div className="d-flex border row rounded justify-content-center">
-          <div className="col-3">
-            
-          </div>
-        
-            <div className="d-flex container flex-wrap col-md-9 col-12 justify-content-end">
-            
-              {userProjects.slice(0, 2).map(project => {
-                return (
-                  <Bounce right>                 
-                    <div key={project.id} id={project.id} className="d-inline-flex align-items-center imageContainer mx-1">                  
-                      <img src={project.images} className="projectImage img-responsive" />
-                      <div className="middle">
-                        <a className="projectHomeLink" href="/projects"><div className="imageText py-3 px-3">View Projects</div></a>
-                      </div>     
-                    </div>       
-                  </Bounce>
-                )
-              })}
-              
-            </div>
-            
-          
-          </div>
-        </div>     
+        </div>  
       </Layout>
     )
   }

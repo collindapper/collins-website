@@ -1,16 +1,13 @@
+// BODY
+.nav-item {
+  font-size: 18px;
+}
+
 // NAVIGATION BAR
 .navbar,
 .hamburger-toggle {
   background-color: rgba(255, 255, 255, 0.75);
   //backdrop-filter: blur(10px);
-}
-
-/* Mobile Navbar */
-@media only screen and (max-width: 1405px) {
-  //.nav-link:hover,
-  //.nav-link:active {
-  //  color: #E18700;
-  //}
 }
 
 @media only screen and (max-width: 1405px) {

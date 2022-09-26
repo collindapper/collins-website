@@ -23,27 +23,14 @@ class Contact extends React.Component {
           </div>
 
           <Slide right>
-          <div className="col-12 col-lg-6 pt-3">
-              <div className="d-flex col-12 justify-content-md-start justify-content-center mb-2">
-                <h3 className="text-center"><strong>Email </strong>collindapper@gmail.com</h3>
-              </div>
-              <div className="d-flex col-12 justify-content-md-start justify-content-center mb-2">
-                <h3 className="text-center"><strong>LinkedIn </strong><a className="text-danger" href="https://www.linkedin.com/in/collin-dapper-a1b59a152/">collindapper</a></h3>
-              </div>
-              <div className="d-flex col-12 justify-content-md-start justify-content-center mb-2">
-                <h3 className="text-center"><strong>GitHub </strong><a className="text-danger" href="https://github.com/collindapper">collindapper</a></h3>
-              </div>
-              <div className="d-flex col-12 justify-content-md-start justify-content-center">
-                <h3 className="text-center"><strong>Location </strong>San Francisco Bay Area</h3>
-              </div>
-            </div>
+          
             </Slide>
 
-            <Fade bottom>
-            <div className="d-flex col-12 justify-content-center mt-2">
-              <img src={map} className="d-flex img-responsive map" />
+            <div className="d-flex container mapContainer" style={{ backgroundImage: `url(${map})` }}>
+              <div className="shadow-lg rounded my-3 col-11 col-lg-5 ms-auto contactForm">
+                <h1>Collin Dapper</h1>
+              </div>
             </div>
-            </Fade>
         </div>
       </Layout>
     )

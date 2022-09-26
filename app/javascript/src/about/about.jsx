@@ -15,12 +15,12 @@ class About extends React.Component {
           <div className="row aboutRow mb-5">
             <Slide left>
             <div className="col-12 col-lg-4 mx-auto my-md-auto mt-auto">
-              <p className="aboutHeading display-1"><strong>ABOUT</strong></p>
+              <p className="aboutHeading display-3"><strong>ABOUT</strong></p>
             </div>
             </Slide>
 
             <Slide right>
-            <div className="col-12 col-md-8 my-md-auto pt-md-5 ps-md-5">
+            <div className="col-12 col-lg-8 my-md-auto pt-md-5 ps-md-5">
               <p className="bodySection lh-lg text-black">Collin is an adaptive and creative junior full-stack web developer with proficiency in front-end programming languages such as: HTML, CSS, and ReactJS; Back-end programming knowledge in JavaScript and Ruby, as well as, experience conducting user research and collaborating with developers to build dynamic websites. Professional strengths include problem-solving, communication and time management. Analytical and leadership mindset from experience in Operations Management.</p>
             </div>
             </Slide>
@@ -29,13 +29,13 @@ class About extends React.Component {
           
           <div className="row aboutRow mt-5 mb-5">
             <Slide left>
-            <div className="col-12 col-md-4 mx-auto my-md-auto mt-auto">
-              <p className="educationHeading display-1"><strong>EDUCATION</strong></p>
+            <div className="col-12 col-lg-4 mx-auto my-md-auto mt-auto">
+              <p className="educationHeading display-3"><strong>EDUCATION</strong></p>
             </div>
             </Slide>
 
             <Slide right>
-            <div className="col-12 col-md-8 my-md-auto pt-md-4 ps-md-5">
+            <div className="col-12 col-lg-8 my-md-auto pt-md-4 ps-md-5">
               <h1 className="text-black"><strong>Altcademy</strong></h1>
               <h3 className="text-black">Full-Stack Web Development</h3>
               <p className="bodySection"><secondary>November 2021 - September 2022</secondary></p>
@@ -57,13 +57,13 @@ class About extends React.Component {
 
           <div className="row aboutRow mt-5">
             <Slide left>
-            <div className="col-12 col-md-4 mx-auto my-md-auto mt-auto">
-              <p className="educationHeading display-1"><strong>EXPERIENCE</strong></p>
+            <div className="col-12 col-lg-4 mx-auto my-md-auto mt-auto">
+              <p className="educationHeading display-3"><strong>EXPERIENCE</strong></p>
             </div>
             </Slide>
 
             <Slide right>
-            <div className="col-12 col-md-8 my-md-auto pt-md-4 ps-md-5">
+            <div className="col-12 col-lg-8 my-md-auto pt-md-4 ps-md-5">
               <h1 className="text-black"><strong>Full-Stack Developer - Collindapper.dev</strong></h1>
               <p className="bodySection"><secondary>April 2022 - Current</secondary></p>
               <br />

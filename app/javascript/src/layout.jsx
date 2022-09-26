@@ -2,6 +2,7 @@ import React from 'react';
 import { safeCredentials, handleErrors } from '@utils/fetchHelper';
 
 import './layout.scss';
+import Calendly from './calendly';
 
 class Layout extends React.Component {
   constructor(props) {
@@ -238,28 +239,19 @@ class Layout extends React.Component {
         </nav>
         }
 
-        <div className="mainContent">
+        <div id="mainContent" className="mainContent mb-3">
           {this.props.children}
+          <Calendly className="mb-5" />
         </div>
 
         {/* Footer */}
-        <footer className="sticky-bottom">
+        <footer className="sticky-bottom mt-5">
           <div className="container-fluid footer">
             <div className="d-flex row">
               <div className="col-6">
                 <p className="footerItem">&copy; 2022 by Collin Dapper</p>
               </div>
-              <div className="col-6">
-                <ul className="d-flex navbar-nav list-group-horizontal justify-content-end">
-                  <li className="nav-item me-2">
-                    <a className="nav-link text-black" href="https://www.linkedin.com/in/collin-dapper-a1b59a152/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
-                  </li>
-                  
-                  <li className="nav-item me-2">
-                    <a className="nav-link text-black" href="https://github.com/collindapper" target="_blank"><i className="fa-brands fa-github"></i></a>
-                  </li>
-                </ul>
-              </div>
+              
             </div>
           </div>
         </footer>

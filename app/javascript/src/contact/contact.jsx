@@ -23,14 +23,12 @@ class Contact extends React.Component {
           </div>
 
           <Slide right>
-          
-            </Slide>
-
             <div className="d-flex container mapContainer" style={{ backgroundImage: `url(${map})` }}>
               <div className="shadow-lg rounded my-3 col-11 col-lg-5 ms-auto contactForm">
                 <h1>Collin Dapper</h1>
               </div>
             </div>
+          </Slide>
         </div>
       </Layout>
     )

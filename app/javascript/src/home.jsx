@@ -55,24 +55,23 @@ class Home extends React.Component {
 
 
         <div className="d-flex row container mx-auto">
-          
-            {userProjects.slice(0, 2).map(project => {
-              return (
-                <Bounce left>
-                <a className="col-12 col-md-6 projectContainer mb-5" href="/projects">
-                <div key={project.id} id={project.id} className="card">
-                <Tada>
-                <p className="badge"><span className="badgeFont">Recent Projects</span></p>
-                </Tada>
-                  <img src={project.images} className="cardImage px-2 py-2" />
-                  <div className="d-flex container descriptionContainer mx-auto">
-                    <p className="mx-auto display-6 text-black">{project.title}</p>
-                  </div>
+          {userProjects.slice(0, 2).map(project => {
+            return (
+              <Bounce left>
+              <a className="col-12 col-md-6 projectContainer mb-5" href="/projects">
+              <div key={project.id} id={project.id} className="card">
+              <Tada>
+              <p className="badge"><span className="badgeFont">Recent Projects</span></p>
+              </Tada>
+                <img src={project.images} className="cardImage px-2 py-2" />
+                <div className="d-flex container descriptionContainer mx-auto">
+                  <p className="mx-auto display-6 text-black">{project.title}</p>
                 </div>
-                </a>
-                </Bounce>
-              )
-            })}
+              </div>
+              </a>
+              </Bounce>
+            )
+          })}
         </div>  
       </Layout>
     )

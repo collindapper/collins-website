@@ -53,7 +53,6 @@ class Home extends React.Component {
           </div>
         </div>
 
-
         <div className="d-flex row container mx-auto">
           {userProjects.slice(0, 2).map(project => {
             return (

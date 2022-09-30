@@ -12,7 +12,7 @@ const Calendly = () => {
          * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
          */
         rootElement={document.getElementById("mainContent")}
-        text="Schedule a meeting with me!"
+        text="Let's Connect! Click here."
         textColor="#ffffff"
         color="#00a2ff"
       />

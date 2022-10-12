@@ -18,21 +18,21 @@ class Contact extends React.Component {
         <div className="container contactContainer">
           <div className="d-flex justify-content-center justify-content-md-start mb-4">
             <Slide left>
-            <p className="mb-0 display-1"><strong>LET'S CONNECT</strong></p>
+            <p className="mb-0 display-1 fontPrimary"><strong>LET'S CONNECT</strong></p>
             </Slide>
           </div>
 
           <Slide right>
             <div className="d-flex container mapContainer shadow-lg" style={{ backgroundImage: `url(${map})` }}>
-              <div className="shadow-lg rounded my-3 col-11 col-md-5 ms-lg-auto mx-auto mx-lg-0 pt-5 contactForm">
-                <h2 className="text-center mt-3">Location</h2>
-                <h5 className="text-center mb-3">San Francisco Bay Area</h5>
-                <h2 className="text-center mt-3">Email</h2>
-                <h5 className="text-center mb-3">collindapper@gmail.com</h5>
-                <h2 className="text-center mt-3">GitHub</h2>
-                <h5 className="text-center mb-3">github.com/collindapper</h5>
-                <h2 className="text-center mt-3">LinkedIn</h2>
-                <h5 className="text-center mb-3">linkedin.com/in/collin-dapper-a1b59a152/</h5>
+              <div className="rounded my-3 col-11 col-md-5 ms-lg-auto mx-auto mx-lg-0 pt-5 contactForm">
+                <h2 className="text-center mt-3 fontPrimary">Location</h2>
+                <h5 className="text-center mb-3 fontSecondary">San Francisco Bay Area</h5>
+                <h2 className="text-center mt-3 fontPrimary">Email</h2>
+                <h5 className="text-center mb-3 fontSecondary">collindapper@gmail.com</h5>
+                <h2 className="text-center mt-3 fontPrimary">GitHub</h2>
+                <h5 className="text-center mb-3 fontSecondary">github.com/collindapper</h5>
+                <h2 className="text-center mt-3 fontPrimary">LinkedIn</h2>
+                <h5 className="text-center mb-3 fontSecondary">linkedin.com/in/collin-dapper-a1b59a152/</h5>
               </div>
             </div>
           </Slide>

@@ -4,6 +4,7 @@ import { safeCredentials, handleErrors } from '@utils/fetchHelper';
 import './layout.scss';
 import Calendly from './calendly';
 
+
 class Layout extends React.Component {
   constructor(props) {
     super(props)
@@ -69,19 +70,16 @@ class Layout extends React.Component {
           <div className="container-fluid d-none d-md-flex justify-content-between">         
               <div className="d-flex col-4">
                 <ul className="d-flex navbar-nav ms-5 me-auto">
-                <li className="nav-item me-3">
-                    <a className="nav-link text-black"href="/">Home</a>
-                  </li>
-                  <li className="nav-item me-3">
-                    <a className="nav-link text-black" href="/about">About</a>
-                  </li>                
-                  <li className="nav-item me-3">
+                <li className="nav-item fontSecondary me-3">
+                    <a className="nav-link text-black" href="/">Home</a>
+                  </li>               
+                  <li className="nav-item fontSecondary me-3">
                     <a className="nav-link text-black"href="/projects">Projects</a>
                   </li>
-                  <li className="nav-item me-3">
+                  <li className="nav-item fontSecondary me-3">
                     <a className="nav-link text-black" href="/skills">Skills</a>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item fontSecondary me-3">
                     <a className="nav-link text-black" href="/contact">Contact</a>
                   </li>
                 </ul>
@@ -89,16 +87,16 @@ class Layout extends React.Component {
 
               <div className="d-flex col-4">
                 <ul className="navbar-nav ms-auto me-5">
-                  <li className="nav-item">
+                  <li className="nav-item fontSecondary">
                     <a className="nav-link text-black" href="https://www.linkedin.com/in/collin-dapper-a1b59a152/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
-                  </li>             
-                  <li className="nav-item">
+                  </li>              
+                  <li className="nav-item fontSecondary">
                     <a className="nav-link text-black" href="https://github.com/collindapper" target="_blank"><i className="fa-brands fa-github"></i></a>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item fontSecondary">
                     <a className="nav-link text-black" href="/login"><i className="fa-solid fa-circle-user"></i></a>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item fontSecondary">
                     <a className="nav-link text-black" onClick={this.logout}>Logout</a>
                   </li>
                 </ul>
@@ -106,44 +104,46 @@ class Layout extends React.Component {
           </div>
 
         <div className="container d-flex d-md-none sticky-top">
-          <a className="d-md-none d-flex navbar-brand text-black" href="/">COLLIN<strong>DAPPER</strong></a>
+          <a className="d-md-none d-flex navbar-brand text-black my-auto fontPrimary" href="/">COLLIN<strong>DAPPER</strong></a>
             <button className="d-md-none hamburger-toggle" type="button" onClick={this.toggleNavbarOpen}>
-              <span className="hamburger-icon"></span>
+                {navbarOpen ?
+                <span className="hamburger-icon-close"></span>
+                :
+                <span className="hamburger-icon-open"></span>
+                }
             </button>
           </div>
 
             {navbarOpen ?        
               <div className="d-flex row mx-auto">
                 <ul className="navbar-nav me-auto mb-2">
-                  <li className="nav-item text-center">
-                    <a className="nav-link text-black" href='/about'>
-                      About
-                    </a>
+                  <li className="nav-item fontSecondary text-center">
+                    <a className="nav-link text-black" href="/">Home</a>
                   </li>
-                  <li className="nav-item text-center">
+                  <li className="nav-item fontSecondary text-center">
                     <a className="nav-link text-black" href='/projects'>Projects</a>
                   </li>
-                  <li className="nav-item text-center">
+                  <li className="nav-item fontSecondary text-center">
                     <a className="nav-link text-black" href='/skills'>Skills</a>
                   </li>
-                  <li className="nav-item text-center">
+                  <li className="nav-item fontSecondary text-center">
                     <a className="nav-link text-black" href='/contact'>Contact</a>
                   </li>
                 </ul>
 
                 <div className="row mx-auto">
                   <ul className="d-flex navbar-nav list-group-horizontal justify-content-between">
-                    <li className="nav-item">
+                    <li className="nav-item fontSecondary">
                       <a className="nav-link text-black" href="https://www.linkedin.com/in/collin-dapper-a1b59a152/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
                     </li>
                     
-                    <li className="nav-item">
+                    <li className="nav-item fontSecondary">
                       <a className="nav-link text-black" href="https://github.com/collindapper" target="_blank"><i className="fa-brands fa-github"></i></a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item fontSecondary">
                       <a className="nav-link text-black" href="/login"><i className="fa-solid fa-circle-user"></i></a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item fontSecondary">
                       <a className="nav-link text-black" onClick={this.logout}>Logout</a>
                     </li>
                   </ul>
@@ -159,19 +159,16 @@ class Layout extends React.Component {
           <div className="navbar container-fluid d-none d-md-flex justify-content-between">
               <div className="d-flex col-4">
                 <ul className="d-flex navbar-nav me-auto ms-5">
-                <li className="nav-item me-2">
+                <li className="nav-item fontSecondary me-2">
                     <a className="nav-link text-black" href='/'>Home</a>
                   </li>
-                  <li className="nav-item me-2">
-                    <a className="nav-link text-black" href='/about'>About</a>
-                  </li>
-                  <li className="nav-item me-2">
+                  <li className="nav-item fontSecondary me-2">
                     <a className="nav-link text-black"href='/projects'>Projects</a>
                   </li>
-                  <li className="nav-item me-2">
+                  <li className="nav-item fontSecondary me-2">
                     <a className="nav-link text-black" href='/skills'>Skills</a>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item fontSecondary">
                     <a className="nav-link text-black" href='/contact'>Contact</a>
                   </li>
                 </ul>
@@ -179,13 +176,13 @@ class Layout extends React.Component {
 
               <div className="d-flex col-4">
                 <ul className="navbar-nav ms-auto me-5">
-                  <li className="nav-item">
+                  <li className="nav-item fontSecondary">
                     <a className="nav-link text-black" href="https://www.linkedin.com/in/collin-dapper-a1b59a152/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item fontSecondary">
                     <a className="nav-link text-black" href="https://github.com/collindapper" target="_blank"><i className="fa-brands fa-github"></i></a>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item fontSecondary">
                     <a className="nav-link text-black" href="/login"><i className="fa-solid fa-circle-user"></i></a>
                   </li>
                 </ul>
@@ -193,7 +190,7 @@ class Layout extends React.Component {
           </div>
 
         <div className="container d-flex d-md-none sticky-top">
-          <a className="d-md-none d-flex navbar-brand text-black" href="/">COLLIN<strong>DAPPER</strong></a>
+          <a className="d-md-none d-flex navbar-brand text-black fontPrimary" href="/">COLLIN<strong>DAPPER</strong></a>
             <button className="d-md-none hamburger-toggle" type="button" onClick={this.toggleNavbarOpen}>
               <span className="hamburger-icon"></span>
             </button>
@@ -202,31 +199,29 @@ class Layout extends React.Component {
             {navbarOpen ?
               <div className="d-flex row mx-auto">
                 <ul className="navbar-nav me-auto mb-2">
-                  <li className="nav-item text-center">
-                    <a className="nav-link text-black" href="/about">
-                      About
-                    </a>
+                  <li className="nav-item fontSecondary text-center">
+                    <a className="nav-link text-black" href="/">Home</a>
                   </li>
-                  <li className="nav-item text-center">
+                  <li className="nav-item fontSecondary text-center">
                     <a className="nav-link text-black" href="/projects">Projects</a>
                   </li>
-                  <li className="nav-item text-center">
+                  <li className="nav-item fontSecondary text-center">
                     <a className="nav-link text-black" href="/skills">Skills</a>
                   </li>
-                  <li className="nav-item text-center">
+                  <li className="nav-item fontSecondary text-center">
                     <a className="nav-link text-black" href="/contact">Contact</a>
                   </li>
                 </ul>
 
                 <div className="row mx-auto">
                   <ul className="d-flex navbar-nav list-group-horizontal justify-content-between">
-                    <li className="nav-item">
+                    <li className="nav-item fontSecondary">
                       <a className="nav-link text-black" href="https://www.linkedin.com/in/collin-dapper-a1b59a152/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
                     </li>                  
-                    <li className="nav-item">
+                    <li className="nav-item fontSecondary">
                       <a className="nav-link text-black" href="https://github.com/collindapper" target="_blank"><i className="fa-brands fa-github"></i></a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item fontSecondary">
                       <a className="nav-link text-black" href="/login"><i className="fa-solid fa-circle-user"></i></a>
                     </li>
                   </ul>

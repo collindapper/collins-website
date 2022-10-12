@@ -78,7 +78,7 @@ class Skills extends React.Component {
         <div className="container skillsContainer py-4">
           <div className="d-flex justify-content-between align-items-center mb-4">
             <Slide left>
-            <p className="mb-0 display-1"><strong>SKILLS</strong></p>
+            <p className="mb-0 display-1 fontPrimary"><strong>SKILLS</strong></p>
             </Slide>
 
             {(authenticated) ? <a className="btn p-2 mx-2" role="button" onClick={this.toggle}>Add a new skill</a> : <div></div>}
@@ -95,16 +95,16 @@ class Skills extends React.Component {
                 <Bounce right>
                 <div key={skill.id} id={skill.id} className="skills-wrap p-2 mb-3 rounded shadow-lg col-10 col-md-5 col-xxl-3 mx-1">
                     <div className="row d-flex flex-column px-3">
-                      <h2 className="mb-auto">{skill.title}</h2>
+                      <h2 className="mb-auto fontPrimary">{skill.title}</h2>
 
                       {(skill.certification_url !== 'NA')
                       ?
-                      <a className="skillLinks btn btn-primary w-100 mt-5 mb-2" role="button" target="_blank" href={skill.certification_url}>Certification PDF</a>
+                      <a className="skillLinks btn btn-primary w-100 mt-5 mb-2 fontSecondary" role="button" target="_blank" href={skill.certification_url}>Certification PDF</a>
                       :
                       <div className="mt-5"></div>
                       }
 
-                      <a className="mb-0 skillLinks btn btn-primary w-100" role="button" target="_blank" href={skill.linkedin_url}>LinkedIn Endorsements</a>
+                      <a className="mb-0 skillLinks btn btn-primary w-100 fontSecondary" role="button" target="_blank" href={skill.linkedin_url}>LinkedIn Endorsements</a>
                       
                       
                       {(authenticated)

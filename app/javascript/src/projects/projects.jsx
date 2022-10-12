@@ -78,7 +78,7 @@ class Projects extends React.Component {
         <div className="container projectsContainer py-4">
           <div className="d-flex justify-content-between align-items-center mb-4">
             <Slide left>
-            <p className="mb-0 display-1"><strong>PROJECTS</strong></p>
+            <p className="mb-0 display-1 fontPrimary"><strong>PROJECTS</strong></p>
             </Slide>
 
             {(authenticated) ? <a className="btn btn-my-bookings p-2 mx-2" role="button" onClick={this.toggle}>Add a new project</a> : <div></div>}
@@ -100,15 +100,15 @@ class Projects extends React.Component {
                       </div>
                     <div className="col-md-8">
                       <div className="row d-flex flex-column px-3">
-                        <h2 className="mb-0">{project.title}</h2>
+                        <h2 className="mb-0 fontPrimary">{project.title}</h2>
                         <div className="d-flex">
-                          <p className="text-secondary">{project.date_completed}</p>
+                          <p className="text-secondary fontSecondary">{project.date_completed}</p>
                         </div>
-                        <p className="description-short mb-2 text-secondary">{project.description}</p>
+                        <p className="description-short mb-2 text-secondary fontSecondary">{project.description}</p>
 
-                        <a className="projectLinks btn btn-primary w-100 mt-5 mb-2" role="button" target="_blank" href={project.live_url}>Live Site</a>
+                        <a className="projectLinks btn btn-primary w-100 mt-5 mb-2 fontSecondary" role="button" target="_blank" href={project.live_url}>Live Site</a>
 
-                        <a className="mb-0 projectLinks btn btn-primary w-100" role="button" target="_blank" href={project.github_url}>GitHub Repo</a>
+                        <a className="mb-0 projectLinks btn btn-primary w-100 fontSecondary" role="button" target="_blank" href={project.github_url}>GitHub Repo</a>
                         
                         
                         {(authenticated)

@@ -93,7 +93,7 @@ class Projects extends React.Component {
             {userProjects.map(project => {
               return (
                 <Bounce right>
-                <div key={project.id} id={project.id} className="projects-wrap p-4 mb-3 rounded shadow-lg">
+                <div key={project.id} id={project.id} className="projects-wrap p-4 mb-3 rounded">
                   <div className="row d-flex">
                     <div className="col-md-4">
                       <div className="project-image rounded" style={{ backgroundImage: `url(${project.images})` }} />

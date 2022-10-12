@@ -93,7 +93,7 @@ class Skills extends React.Component {
             {userSkills.map(skill => {
               return (
                 <Bounce right>
-                <div key={skill.id} id={skill.id} className="skills-wrap p-2 mb-3 rounded shadow-lg col-10 col-md-5 col-xxl-3 mx-1">
+                <div key={skill.id} id={skill.id} className="skills-wrap p-2 mb-3 rounded col-10 col-md-5 col-xxl-3 mx-1">
                     <div className="row d-flex flex-column px-3">
                       <h2 className="mb-auto fontPrimary">{skill.title}</h2>
 

@@ -192,7 +192,11 @@ class Layout extends React.Component {
         <div className="container d-flex d-md-none sticky-top">
           <a className="d-md-none d-flex navbar-brand text-black fontPrimary" href="/">COLLIN<strong>DAPPER</strong></a>
             <button className="d-md-none hamburger-toggle" type="button" onClick={this.toggleNavbarOpen}>
-              <span className="hamburger-icon"></span>
+                {navbarOpen ?
+                <span className="hamburger-icon-close"></span>
+                :
+                <span className="hamburger-icon-open"></span>
+                }
             </button>
           </div>
 

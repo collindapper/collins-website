@@ -6,6 +6,7 @@ import { handleErrors } from '@utils/fetchHelper';
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
 import Tada from 'react-reveal/Tada';
+import Slide from 'react-reveal/Slide';
 import TagCloud from 'TagCloud';
 import './home.scss';
 import profilePic from './images/collin hawaii 2.jpg';
@@ -42,12 +43,16 @@ class Home extends React.Component {
         {/* HERO SECTION */}
         <div className="HomeBody mb-5">
           <div className="row heroSection container mx-auto mt-5 d-flex align-content-center justify-content-center">
+            <Fade left>
             <div className="d-flex col-12 col-md-5 avatar"></div>
+            </Fade>
+
+            <Fade right>
             <div className="col-12 col-md-6 my-auto py-4 ms-md-5 introCard">
               <p className="display-1 text-center heading fontPrimary"><strong>Welcome,</strong></p>
               <p className="display-6 text-center subHeading fontSecondary mb-auto">I'm Collin Dapper. Full-Stack Developer.</p>
             </div>
-            
+            </Fade>
 
           </div>
         </div>

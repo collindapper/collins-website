@@ -25,12 +25,12 @@ class Contact extends React.Component {
           <Slide right>
             <div className="d-flex container mapContainer shadow-lg" style={{ backgroundImage: `url(${map})` }}>
               <div className="rounded my-3 col-11 col-md-5 ms-lg-auto mx-auto mx-lg-0 pt-5 contactForm">
-                <h2 className="text-center mt-3 fontPrimary">Location</h2>
-                <h5 className="text-center mb-3 fontSecondary">San Francisco Bay Area</h5>
+                <h2 className="text-center mt-2 fontPrimary">Location</h2>
+                <h5 className="text-center mb-5 fontSecondary">San Francisco Bay Area</h5>
                 <h2 className="text-center mt-3 fontPrimary">Email</h2>
-                <h5 className="text-center mb-3 fontSecondary">collindapper@gmail.com</h5>
+                <h5 className="text-center mb-5 fontSecondary">collindapper@gmail.com</h5>
                 <h2 className="text-center mt-3 fontPrimary">GitHub</h2>
-                <h5 className="text-center mb-3 fontSecondary">github.com/collindapper</h5>
+                <h5 className="text-center mb-5 fontSecondary">github.com/collindapper</h5>
                 <h2 className="text-center mt-3 fontPrimary">LinkedIn</h2>
                 <h5 className="text-center mb-3 fontSecondary">linkedin.com/in/collin-dapper-a1b59a152/</h5>
               </div>

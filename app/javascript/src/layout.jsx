@@ -105,12 +105,8 @@ class Layout extends React.Component {
 
         <div className="container d-flex d-md-none sticky-top">
           <a className="d-md-none d-flex navbar-brand text-black my-auto fontPrimary" href="/">COLLIN<strong>DAPPER</strong></a>
-            <button className="d-md-none hamburger-toggle" type="button" onClick={this.toggleNavbarOpen}>
-                {navbarOpen ?
-                <span className="hamburger-icon-close"></span>
-                :
-                <span className="hamburger-icon-open"></span>
-                }
+            <button className="d-md-none hamburger-toggle" onClick={this.toggleNavbarOpen}>
+              <span className={`hamburger hamburger-icon ${navbarOpen && "is-open"}`}></span>
             </button>
           </div>
 
@@ -191,12 +187,8 @@ class Layout extends React.Component {
 
         <div className="container d-flex d-md-none sticky-top">
           <a className="d-md-none d-flex navbar-brand text-black fontPrimary" href="/">COLLIN<strong>DAPPER</strong></a>
-            <button className="d-md-none hamburger-toggle" type="button" onClick={this.toggleNavbarOpen}>
-                {navbarOpen ?
-                <span className="hamburger-icon-close"></span>
-                :
-                <span className="hamburger-icon-open"></span>
-                }
+            <button className="d-md-none hamburger-toggle" onClick={this.toggleNavbarOpen}>
+              <span className={`hamburger hamburger-icon ${navbarOpen && "is-open"}`}></span>
             </button>
           </div>
 

@@ -78,7 +78,7 @@ class Projects extends React.Component {
         <div className="container projectsContainer py-4">
           <div className="d-flex justify-content-between align-items-center mb-4">
             <Slide left>
-            <p className="mb-0 display-1 fontPrimary"><strong>PROJECTS</strong></p>
+            <p className="mb-0 display-1 fontPrimary"><strong>Projects</strong></p>
             </Slide>
 
             {(authenticated) ? <a className="btn btn-my-bookings p-2 mx-2" role="button" onClick={this.toggle}>Add a new project</a> : <div></div>}

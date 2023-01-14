@@ -49,8 +49,8 @@ class Home extends React.Component {
 
             <Fade right>
             <div className="col-12 col-md-6 my-auto py-4 ms-md-5 introCard">
-              <p className="display-1 text-center heading fontPrimary"><strong>Welcome,</strong></p>
-              <p className="display-6 text-center subHeading fontSecondary mb-auto">I'm Collin Dapper. Full-Stack Developer.</p>
+              <p className="display-1 text-center heading fontPrimary"><strong>Collin Dapper</strong></p>
+              <p className="display-6 text-center subHeading fontSecondary mb-auto">Full-Stack Developer</p>
             </div>
             </Fade>
 

@@ -18,7 +18,7 @@ class Contact extends React.Component {
         <div className="container contactContainer">
           <div className="d-flex justify-content-center justify-content-md-start mb-4">
             <Slide left>
-            <p className="mb-0 display-1 fontPrimary"><strong>LET'S CONNECT</strong></p>
+            <p className="mb-0 display-1 fontPrimary"><strong>Let's Connect!</strong></p>
             </Slide>
           </div>
 

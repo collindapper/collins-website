@@ -2,7 +2,7 @@
   "name": "personal-portfolio-fs",
   "private": true,
   "engine": {
-    "node": "~12.22"
+    "node": "~18.13"
   },
   "dependencies": {
     "@babel/preset-react": "^7.18.6",

@@ -72,7 +72,10 @@ class Layout extends React.Component {
                 <ul className="d-flex navbar-nav ms-5 me-auto">
                 <li className="nav-item fontSecondary me-3">
                     <a className="nav-link text-black" href="/">Home</a>
-                  </li>               
+                  </li>
+                  <li className="nav-item fontSecondary me-3">
+                    <a className="nav-link text-black"href="/about">About</a>
+                  </li>            
                   <li className="nav-item fontSecondary me-3">
                     <a className="nav-link text-black"href="/projects">Projects</a>
                   </li>
@@ -117,6 +120,9 @@ class Layout extends React.Component {
                     <a className="nav-link text-black" href="/">Home</a>
                   </li>
                   <li className="nav-item fontSecondary text-center">
+                    <a className="nav-link text-black" href="/about">About</a>
+                  </li>
+                  <li className="nav-item fontSecondary text-center">
                     <a className="nav-link text-black" href='/projects'>Projects</a>
                   </li>
                   <li className="nav-item fontSecondary text-center">
@@ -159,6 +165,9 @@ class Layout extends React.Component {
                     <a className="nav-link text-black" href='/'>Home</a>
                   </li>
                   <li className="nav-item fontSecondary me-2">
+                    <a className="nav-link text-black"href='/about'>About</a>
+                  </li>
+                  <li className="nav-item fontSecondary me-2">
                     <a className="nav-link text-black"href='/projects'>Projects</a>
                   </li>
                   <li className="nav-item fontSecondary me-2">
@@ -197,6 +206,9 @@ class Layout extends React.Component {
                 <ul className="navbar-nav me-auto mb-2">
                   <li className="nav-item fontSecondary text-center">
                     <a className="nav-link text-black" href="/">Home</a>
+                  </li>
+                  <li className="nav-item fontSecondary text-center">
+                    <a className="nav-link text-black" href="/about">About</a>
                   </li>
                   <li className="nav-item fontSecondary text-center">
                     <a className="nav-link text-black" href="/projects">Projects</a>

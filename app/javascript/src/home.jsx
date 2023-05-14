@@ -66,7 +66,7 @@ class Home extends React.Component {
           </div>
           <Fade left>
           <div className="col-12 aboutHeroSection my-auto py-4 rounded">
-            <h3 className="text-center fontSecondary">Collin is an adaptive and creative junior full-stack web developer with proficiency in front-end programming languages such as: HTML, CSS, and ReactJS; Back-end programming knowledge in JavaScript and Ruby, as well as, experience conducting user research and collaborating with developers to build dynamic websites. Professional strengths include problem-solving, communication and time management. Analytical and leadership mindset from experience in Operations Management.</h3>
+            <h3 className="text-center fontSecondary">I am an adaptive and creative junior full-stack software developer with proficiency in front-end programming languages such as: HTML, CSS, and JavaScript; Back-end programming knowledge in Ruby and Rails, as well as, experience conducting user research and collaborating with developers to build dynamic websites. Professional strengths include problem-solving, communication and time management. Analytical and leadership mindset from experience in Operations Management.</h3>
           </div>
           </Fade>
         </div>

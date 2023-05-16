@@ -11,6 +11,10 @@
   opacity: 0.88;
 }
 
+.nav-link:hover {
+  transform: scale(1.2);
+}
+
 .avatar {
   background-image: url(./images/blue\ background.jpg);
   background-size: cover;

@@ -31,6 +31,10 @@ nav {
   font-size: 18px;
 }
 
+.nav-item:hover {
+  transform: scale(1.2);
+}
+
 //MOBILE NAV TOGGLE
 .hamburger-toggle {
   width: 60px;

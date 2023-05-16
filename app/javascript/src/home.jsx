@@ -50,7 +50,11 @@ class Home extends React.Component {
             <Fade right>
             <div className="col-12 col-md-6 my-auto py-4 ms-md-5 introCard">
               <p className="display-1 text-center heading fontPrimary"><strong>Collin Dapper</strong></p>
-              <p className="display-6 text-center subHeading fontSecondary mb-auto">Full-Stack Developer</p>
+              <p className="display-6 text-center subHeading fontSecondary mb-auto">Full-Stack Software Developer</p>
+              <div className="d-flex justify-content-center mt-2">
+                <a className="nav-link text-black display-6 text-center" href="https://www.linkedin.com/in/collin-dapper-a1b59a152/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
+                <a className="nav-link text-black display-6 text-center" href="https://github.com/collindapper" target="_blank"><i className="fa-brands fa-github"></i></a>
+              </div>
             </div>
             </Fade>
 

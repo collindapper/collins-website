@@ -11,8 +11,20 @@
   opacity: 0.88;
 }
 
+.fontNavigation {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  opacity: 0.88;
+}
+
+.fontNavIcons {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  opacity: 0.88;
+}
+
 nav {
-  background-color: rgba(255, 255, 255, 1);
+  backdrop-filter: blur(10px);
 }
 
 .nav-item {

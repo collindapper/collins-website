@@ -45,6 +45,20 @@ class About extends React.Component {
               <p className="bodySection fontSecondary"><secondary>April 2022 - Current</secondary></p>
               <br />
 
+              <h1 className="text-black fontPrimary"><strong>Process Assistant, Operations - Amazon.com</strong></h1>
+              <h5 className="text-black fontSecondary">Assist Ops Management team lead a team of hourly workforce and engage my team during their shifts to maintain the highest levels of safety, quality, attendance, and performance. Maintained our customer expectations to ensure customer orders were delivered at the correct place and time</h5>
+              <h5 className="text-black fontSecondary">
+              - Communicate policies to my team and act as the primary information source for the team<br/>
+              - maintaining compliance, consistency, and taking corrective action when needed<br/>
+              - Create, manage, and support recognition programs<br/>
+              - Support all safety programs and OSHA compliance to ensure a safe work environment for all associates<br/>
+              - Ensure procedures are followed for building security and product loss prevention<br/>
+              - Develop tools to track and analyze cost and production trends<br/>
+              - Partner with the management team to establish and maintain quality control standards<br/>
+              - Develop performance goals and objectives to achieve customer demand and ensure accuracy and quality</h5>
+              <p className="bodySection fontSecondary"><secondary>October 2022 - Current</secondary></p>
+              <br />
+
               <h1 className="text-black fontPrimary"><strong>Full-Stack Developer Student - Altcademy</strong></h1>
               <h5 className="text-black fontSecondary">Drafted, Wire-framed, and wrote well-designed, testable and efficient code using the best software development practice.
                 Developed website layouts and user interfaces using standard HTML and CSS, as well as, integrating data from various

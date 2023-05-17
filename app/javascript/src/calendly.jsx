@@ -13,8 +13,8 @@ const Calendly = () => {
          */
         rootElement={document.getElementById("mainContent")}
         text="Let's Connect! Click here."
-        textColor="#ffffff"
-        color="#00a2ff"
+        textColor="#007ea7"
+        color="#000000"
       />
     </div>
   );

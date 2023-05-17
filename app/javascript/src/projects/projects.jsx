@@ -104,7 +104,7 @@ class Projects extends React.Component {
                         <div className="d-flex">
                           <p className="text-secondary fontSecondary">{project.date_completed}</p>
                         </div>
-                        <p className="description-short mb-2 text-secondary fontSecondary">{project.description}</p>
+                        <p className="description-short mb-2 text-secondary fontSecondary projectDescription">{project.description}</p>
 
                         <a className="projectLinks btn btn-primary w-100 mt-5 mb-2 fontSecondary" role="button" target="_blank" href={project.live_url}>Live Site</a>
 

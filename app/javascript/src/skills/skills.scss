@@ -11,6 +11,14 @@
   opacity: 0.88;
 }
 
+@media (min-width: 768px) {
+  .fontNavigation {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    opacity: 0.88;
+  }
+}
+
 body {
   background: 
   linear-gradient(to bottom, #007ea7, #007ea7);

@@ -36,7 +36,7 @@ class Home extends React.Component {
 
   render () {
     const {userProjects} = this.state;
-    const avatar = profilePic;
+    
   
     return (
       <Layout>
@@ -81,7 +81,7 @@ class Home extends React.Component {
             <h4 className="text-center fontPrimary me-2">Projects</h4>
             <i class="fa-solid fa-chevron-down mt-1"></i>
           </div>
-          {userProjects.slice(0, 2).map(project => {
+          {/*{userProjects.slice(0, 2).map(project => {
             return (
               <Bounce left>
               <a className="col-12 col-md-6 projectContainer mb-5" href="/projects">
@@ -97,7 +97,7 @@ class Home extends React.Component {
               </a>
               </Bounce>
             )
-          })}
+          })}*/}
         </div>  
       </Layout>
     )

@@ -86,10 +86,13 @@ class Projects extends React.Component {
 
           {show_widget ? <AddProjectWidget /> : <div></div>}
 
+
+
           {(userProjects.length != 0)
           
           ?
           <div>
+
             {userProjects.map(project => {
               return (
                 <Bounce right>

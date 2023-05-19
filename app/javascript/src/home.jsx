@@ -73,32 +73,7 @@ class Home extends React.Component {
             <h3 className="text-center fontSecondary">I am an adaptive and creative junior full-stack software developer with proficiency in front-end programming languages such as: HTML, CSS, and JavaScript; Back-end programming knowledge in Ruby and Rails, as well as, experience conducting user research and collaborating with developers to build dynamic websites. Professional strengths include problem-solving, communication and time management. Analytical and leadership mindset from experience in Operations Management.</h3>
           </div>
           </Fade>
-        </div>
-
-        {/* Project Hero Section */}
-        <div className="d-flex row container mx-auto">
-          <div className="d-flex arrow bounce mt-5 mb-3">
-            <h4 className="text-center fontPrimary me-2">Projects</h4>
-            <i class="fa-solid fa-chevron-down mt-1"></i>
-          </div>
-          {/*{userProjects.slice(0, 2).map(project => {
-            return (
-              <Bounce left>
-              <a className="col-12 col-md-6 projectContainer mb-5" href="/projects">
-              <div key={project.id} id={project.id} className="card">
-              <Tada>
-              <p className="badge"><span className="badgeFont">Featured</span></p>
-              </Tada>
-                <img src={project.images} className="cardImage px-2 py-2" />
-                <div className="d-flex container descriptionContainer mx-auto">
-                  <p className="mx-auto display-6 text-black fontPrimary">{project.title}</p>
-                </div>
-              </div>
-              </a>
-              </Bounce>
-            )
-          })}*/}
-        </div>  
+        </div> 
       </Layout>
     )
   }

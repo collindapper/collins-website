@@ -19,21 +19,6 @@ class Home extends React.Component {
     }
   }
 
-  componentDidMount = () => {
-    this.getAllUserProjects();
-  }
-
-  getAllUserProjects() {
-    fetch('/api/projects/')
-      .then(handleErrors)
-      .then(data => {
-        console.log('data', data)
-        this.setState({
-          userProjects: data.projects,
-        })
-      })
-  }
-
   render () {
     const {userProjects} = this.state;
     

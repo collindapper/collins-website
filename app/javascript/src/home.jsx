@@ -1,15 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Layout from './layout';
-import { handleErrors } from '@utils/fetchHelper';
 
 import Fade from 'react-reveal/Fade';
-import Bounce from 'react-reveal/Bounce';
-import Tada from 'react-reveal/Tada';
-import Slide from 'react-reveal/Slide';
-import TagCloud from 'TagCloud';
 import './home.scss';
-import profilePic from './images/collin hawaii 2.jpg';
 
 class Home extends React.Component {
   constructor(props) {

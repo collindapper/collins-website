@@ -19,9 +19,7 @@
   }
 }
 
-.nav-link:hover {
-  transform: scale(1.2);
-}
+// Hero Section
 
 .avatar {
   background-image: url(./images/blue\ background.jpg);
@@ -47,6 +45,7 @@ a {
   text-decoration: none;
 }
 
+// About Section
 .arrow {
   text-align: center;
 }
@@ -69,53 +68,50 @@ a {
   }
 }
 
-// ABOUT SECTION
 .aboutHeroSection {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.66);
   box-shadow: -5px 5px #B99C6B, -5px 5px #B99C6B;
 }
 
-// WORK SECTION
-.projectContainer {
-  text-decoration: none;
+//Project Section
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-.badgeFont {
-  font-size: 16px;
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
 }
 
-.projectContainer .badge {
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  padding: 10px 10px;
-  background: #B99C6B;
-  color: white;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners */
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
-}
-
-/* Add some padding inside the card container */
-.descriptionContainer {
-  padding: 2px 16px;
-}
-
-/* Add rounded corners to the top left and the top right corner of the image */
-.cardImage {
-  border-radius: 5px 5px 0 0;
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
   width: 100%;
-  height: 500px;
 }
 
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.viewProjects {
+  //margin-top: 4px;
+  color: #121212;
+}
 
 // FOOTER

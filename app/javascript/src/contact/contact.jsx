@@ -3,7 +3,6 @@ import Layout from '@src/layout';
 
 import './contact.scss';
 import Slide from 'react-reveal/Slide';
-import Fade from 'react-reveal/Fade';
 
 import location from './images/location.png'
 
@@ -18,7 +17,7 @@ class Contact extends React.Component {
         <div className="container contactContainer">
           <div className="d-flex justify-content-center justify-content-md-start mb-4">
             <Slide left>
-            <p className="mb-0 display-1 fontPrimary"><strong>Let's Connect!</strong></p>
+            <p className="heading mb-0 display-1 fontPrimary"><strong>Let's Connect!</strong></p>
             </Slide>
           </div>
 

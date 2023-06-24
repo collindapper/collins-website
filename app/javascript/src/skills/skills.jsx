@@ -78,7 +78,7 @@ class Skills extends React.Component {
         <div className="container skillsContainer py-4">
           <div className="d-flex justify-content-between align-items-center mb-4">
             <Slide left>
-            <p className="mb-0 display-1 fontPrimary"><strong>Skills</strong></p>
+            <p className="heading mb-0 display-1 fontPrimary"><strong>Skills</strong></p>
             </Slide>
 
             {(authenticated) ? <a className="btn p-2 mx-2" role="button" onClick={this.toggle}>Add a new skill</a> : <div></div>}

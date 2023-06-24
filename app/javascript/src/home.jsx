@@ -14,9 +14,6 @@ class Home extends React.Component {
   }
 
   render () {
-    const {userProjects} = this.state;
-    
-  
     return (
       <Layout>
         {/* HERO SECTION */}
@@ -49,10 +46,34 @@ class Home extends React.Component {
           </div>
           <Fade left>
           <div className="col-12 aboutHeroSection my-auto py-4 rounded">
-            <h3 className="text-center fontSecondary">I am an adaptive and creative junior full-stack software developer with proficiency in front-end programming languages such as: HTML, CSS, and JavaScript; Back-end programming knowledge in Ruby and Rails, as well as, experience conducting user research and collaborating with developers to build dynamic websites. Professional strengths include problem-solving, communication and time management. Analytical and leadership mindset from experience in Operations Management.</h3>
+            <h3 className="text-center fontSecondary">I am an adaptive and creative Junior Software Developer with proficiency in front-end programming languages and frameworks such as: HTML, CSS, and ReactJS; Back-end programming knowledge in JavaScript and Ruby, familiar with basics of computing and database use, as well as, conducting user research and collaborating with developers to build dynamic websites.  Professional strengths include problem-solving, communication and time management. Analytical and leadership mindset from experience in Operations Management.</h3>
           </div>
           </Fade>
         </div> 
+
+        <div className="container">
+          <div className="row">
+            <div className="d-flex arrow bounce mt-5 mb-3">
+              <h4 className="text-center fontPrimary me-2">Projects</h4>
+              <i class="fa-solid fa-chevron-down mt-1"></i>
+            </div>
+
+            <div className="column">
+              <img src={require('./images/Airbnb.jpg')} />
+              <img src={require('./images/movie finder.jpg')} />
+            </div>
+            
+            <div className="column">
+              <img src={require('./images/currency converter.jpg')} />
+              <img src={require('./images/Twitter.png')} />
+            </div>
+            
+            <a role='button' className="viewProjects btn btn-outline-dark mt-4 fontSecondary" href='/projects'>View all projects</a>
+
+          </div>
+        </div>
+
+        
       </Layout>
     )
   }

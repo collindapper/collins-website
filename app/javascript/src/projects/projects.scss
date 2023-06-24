@@ -24,16 +24,10 @@ body {
   linear-gradient(to bottom, #007ea7, #007ea7);
 }
 
-// ADD PROJECT WIDGET
-.formBox {
-  background-color: black;
-}
-
-.placeholderFont {
-  font-family: 'Noto Serif', serif;
-}
-
 // PROJECTS PAGE
+.heading {
+  text-shadow: -3px 0 #B99C6B;
+}
 
 .projects-wrap {
   background-color: rgba(255, 255, 255, 0.5);
@@ -58,4 +52,127 @@ body {
 
 .projectLinks {
   text-decoration: none;
+}
+
+
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+ .flip-card {
+  background-color: transparent;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin-bottom: 40px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.airbnbImg {
+  background-image: url(../images/Airbnb.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.twitterImg {
+  background-image: url(../images/Twitter.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.xchangeImg {
+  background-image: url(../images/currency\ converter.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.movieFinderImg {
+  background-image: url(../images/movie\ finder.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.mathGameImg {
+  background-image: url(../images/math\ game.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.toDoListImg {
+  background-image: url(../images/api\ to\ do\ list.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.shoppingCartImg {
+  background-image: url(../images/shopping\ cart.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.blackJackImg {
+  background-image: url(../images/blackjack.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.rockPaperScissorsImg {
+  background-image: url(../images/rock\ paper\ scissors.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.airbnbBookingImg {
+  background-image: url(../images/airbnb\ news\ webpage.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.airbnbNewsImg {
+  background-image: url(../images/airbnb\ booking\ webpage.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.newsweekImg {
+  background-image: url(../images/Newsweek\ clone.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.appleImg {
+  background-image: url(../images/Apple\ Clone.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgba(255, 255, 255, 0.66);
+  color: #121212;
+  transform: rotateY(180deg);
+} 
+
+.viewRepo {
+  width: 80%;
 }

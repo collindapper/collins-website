@@ -18,13 +18,5 @@ class StaticPagesController < ApplicationController
   def contact
     render 'contact'
   end
-
-  def add_project
-    render 'add_project'
-  end
-
-  def login
-    render 'login'
-  end
   
 end

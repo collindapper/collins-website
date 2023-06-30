@@ -29,9 +29,9 @@ class Contact extends React.Component {
                 <h2 className="text-center mt-3 fontPrimary">Email</h2>
                 <h5 className="text-center mb-5 fontSecondary">collindapper@gmail.com</h5>
                 <h2 className="text-center mt-3 fontPrimary">GitHub</h2>
-                <h5 className="text-center mb-5 fontSecondary">github.com/collindapper</h5>
+                <h5 className="text-center mb-5 fontSecondary"><a className='contactLink' href="https://www.github.com/collindapper" target='_blank'>github.com/collindapper</a></h5>
                 <h2 className="text-center mt-3 fontPrimary">LinkedIn</h2>
-                <h5 className="text-center mb-3 fontSecondary">linkedin.com/in/collin-dapper-a1b59a152/</h5>
+                <h5 className="text-center mb-3 fontSecondary"><a className='contactLink' href='https://www.linkedin.com/in/collin-dapper-a1b59a152/' target='_blank'>linkedin.com/in/collin-dapper-a1b59a152/</a></h5>
               </div>
             </div>
           </Slide>

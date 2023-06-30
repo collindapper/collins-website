@@ -95,6 +95,39 @@ class Skills extends React.Component {
               <h3 className='fontSecondary text-center'>Microsoft Office</h3>
             </div>
           </div>
+          <br/>
+
+          <div className="d-flex align-items-center mb-4 mt-4">
+            <Slide left>
+            <h2 className="fontPrimary mx-auto">Operations Management</h2>
+            </Slide>
+          </div>
+
+          <div className='d-flex row justify-content-around mb-md-4'>
+            <div className='skillBox rounded shadow-lg col-md-3 col-11 py-3 mb-2'>
+              <h1 className='text-center'><i className="fas fa-tasks"></i></h1>
+              <h3 className='fontSecondary text-center'>Management</h3>
+            </div>
+            <div className='skillBox rounded shadow-lg col-md-3 col-11 py-3 mb-2'>
+              <h1 className='text-center'><i className="fas fa-users"></i></h1>
+              <h3 className='fontSecondary text-center'>Team Leadership</h3>
+            </div>
+            <div className='skillBox rounded shadow-lg col-md-3 col-11 py-3 mb-2'>
+              <h1 className='text-center'><i className="fas fa-chart-pie"></i></h1>
+              <h3 className='fontSecondary text-center'>Data Analysis</h3>
+            </div>
+          </div>
+
+          <div className='d-flex row justify-content-around mb-md-4'>
+            <div className='skillBox rounded shadow-lg col-md-3 col-11 py-3 mb-2'>
+              <h1 className='text-center'><i className="fas fa-project-diagram"></i></h1>
+              <h3 className='fontSecondary text-center'>Strategic Planning</h3>
+            </div>
+            <div className='skillBox rounded shadow-lg col-md-3 col-11 py-3 mb-2'>
+              <h1 className='text-center'><i className="fas fa-chart-line"></i></h1>
+              <h3 className='fontSecondary text-center'>Business Analytics</h3>
+            </div>
+          </div>
           
         </div>
       </Layout>

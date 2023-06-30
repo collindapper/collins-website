@@ -24,13 +24,9 @@ body {
   linear-gradient(to bottom, #007ea7, #007ea7);
 }
 
-// PROJECTS PAGE
+// Skills Heading
 .heading {
   text-shadow: -3px 0 #B99C6B;
-}
-
-.skillsContainer {
-  height: 100%;
 }
 
 .skills-wrap {
@@ -38,16 +34,8 @@ body {
   box-shadow: -5px 5px #B99C6B, -5px 5px #B99C6B;
 }
 
-.description-short {
-  width: 100%;
-  line-height: 1.5em;
-  height: 4.5em;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-}
-
-.skillLinks {
-  text-decoration: none;
+// Skill Boxes
+.skillBox {
+  background-color: rgba(255, 255, 255, 0.66);
+  
 }

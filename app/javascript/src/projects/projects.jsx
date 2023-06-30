@@ -19,7 +19,7 @@ class Projects extends React.Component {
         <div className="container projectsContainer py-4">
           <div className="d-flex justify-content-between align-items-center mb-4">
             <Slide left>
-            <p className="heading mb-0 display-1 fontPrimary"><strong>Projects</strong></p>
+            <p className="heading mb-0 display-2 fontPrimary"><strong>Projects</strong></p>
             </Slide>
           </div>
           
@@ -57,7 +57,7 @@ class Projects extends React.Component {
                 </div>
                 <div className="flip-card-back">
                   <h4 className="fontPrimary mt-2">Xchange: Currency Converter</h4>
-                  <p className="fontSecondary">Intuitive and extremely user friendly currency converter application that helps a user convert any input amount from a selected base currency to a selected converted currency. Along with this tool, there is an additional page to input a currency amount and select a base currency and see the conversions to all other 33 currencies. Programming languages and libraries used; HTML, CSS, JavaScript, Reactjs, REST APIs, Jquery.</p>
+                  <p className="fontSecondary">Intuitive and extremely user friendly currency converter application that helps a user convert any input amount from a selected base currency to a selected converted currency. Programming languages and libraries used; HTML, CSS, JavaScript, Reactjs, REST APIs, Jquery.</p>
                   <a role='button' className="viewRepo btn btn-outline-dark fontSecondary" href='https://github.com/collindapper/collins-currency-converter' target="_blank">View GitHub Repo</a>
                 </div>
               </div>
@@ -81,7 +81,7 @@ class Projects extends React.Component {
                 </div>
                 <div className="flip-card-back">
                   <h4 className="fontPrimary mt-2">10 Second Math game</h4>
-                  <p className="fontSecondary">A game where the user needs to input the correct answer to a basic arithmetic equation. There is a time limit of 10 seconds for which the user can input the correct answer and progress to the next question. If the user runs out of time, the game ends. If the user correctly answers, 1 second is added. Programming languages and libraries used; HTML, CSS, JavaScript, Bootstrap v5, Jquery, Dynamic Website.</p>
+                  <p className="fontSecondary">A 10 second game where the user needs to input the correct answer to a basic arithmetic equation. If the user runs out of time, the game ends. If the user correctly answers, 1 second is added. Programming languages and libraries used; HTML, CSS, JavaScript, Bootstrap v5, Jquery, Dynamic Website.</p>
                   <a role='button' className="viewRepo btn btn-outline-dark fontSecondary" href='https://github.com/collindapper/collins-10-second-math-game' target="_blank">View GitHub Repo</a>
                 </div>
               </div>
@@ -232,7 +232,7 @@ class Projects extends React.Component {
             </div>
             <div className="col-6">
               <h4 className="fontPrimary mt-2">Xchange: Currency Converter</h4>
-              <p className="fontSecondary">Intuitive and extremely user friendly currency converter application that helps a user convert any input amount from a selected base currency to a selected converted currency. Along with this tool, there is an additional page to input a currency amount and select a base currency and see the conversions to all other 33 currencies. Programming languages and libraries used; HTML, CSS, JavaScript, Reactjs, REST APIs, Jquery.</p>
+              <p className="fontSecondary">Intuitive and extremely user friendly currency converter application that helps a user convert any input amount from a selected base currency to a selected converted currency. Programming languages and libraries used; HTML, CSS, JavaScript, Reactjs, REST APIs, Jquery.</p>
               <a role='button' className="viewRepo btn btn-dark fontSecondary" href='https://github.com/collindapper/collins-currency-converter' target="_blank">View GitHub Repo</a>
             </div>
           </Slide>
@@ -260,7 +260,7 @@ class Projects extends React.Component {
             </div>
             <div className="col-6">
               <h4 className="fontPrimary mt-2">10 Second Math game</h4>
-              <p className="fontSecondary">A game where the user needs to input the correct answer to a basic arithmetic equation. There is a time limit of 10 seconds for which the user can input the correct answer and progress to the next question. If the user runs out of time, the game ends. If the user correctly answers, 1 second is added. Programming languages and libraries used; HTML, CSS, JavaScript, Bootstrap v5, Jquery, Dynamic Website.</p>
+              <p className="fontSecondary">A 10 second game where the user needs to input the correct answer to a basic arithmetic equation. If the user runs out of time, the game ends. If the user correctly answers, 1 second is added. Programming languages and libraries used; HTML, CSS, JavaScript, Bootstrap v5, Jquery, Dynamic Website.</p>
               <a role='button' className="viewRepo btn btn-dark fontSecondary" href='https://github.com/collindapper/collins-10-second-math-game' target="_blank">View GitHub Repo</a>
             </div>
           </Slide>
@@ -419,7 +419,7 @@ class Projects extends React.Component {
             </div>
             <div className="col-12">
               <h4 className="fontPrimary mt-2 text-center">Xchange: Currency Converter</h4>
-              <p className="fontSecondary text-center">Intuitive and extremely user friendly currency converter application that helps a user convert any input amount from a selected base currency to a selected converted currency. Along with this tool, there is an additional page to input a currency amount and select a base currency and see the conversions to all other 33 currencies. Programming languages and libraries used; HTML, CSS, JavaScript, Reactjs, REST APIs, Jquery.</p>
+              <p className="fontSecondary text-center">Intuitive and extremely user friendly currency converter application that helps a user convert any input amount from a selected base currency to a selected converted currency. Programming languages and libraries used; HTML, CSS, JavaScript, Reactjs, REST APIs, Jquery.</p>
               <a role='button' className="w-100 btn btn-dark fontSecondary mb-5" href='https://github.com/collindapper/collins-currency-converter' target="_blank">View GitHub Repo</a>
             </div>
           </Slide>
@@ -447,7 +447,7 @@ class Projects extends React.Component {
             </div>
             <div className="col-12">
               <h4 className="fontPrimary mt-2 text-center">10 Second Math game</h4>
-              <p className="fontSecondary text-center">A game where the user needs to input the correct answer to a basic arithmetic equation. There is a time limit of 10 seconds for which the user can input the correct answer and progress to the next question. If the user runs out of time, the game ends. If the user correctly answers, 1 second is added. Programming languages and libraries used; HTML, CSS, JavaScript, Bootstrap v5, Jquery, Dynamic Website.</p>
+              <p className="fontSecondary text-center">A 10 second game where the user needs to input the correct answer to a basic arithmetic equation. If the user runs out of time, the game ends. If the user correctly answers, 1 second is added. Programming languages and libraries used; HTML, CSS, JavaScript, Bootstrap v5, Jquery, Dynamic Website.</p>
               <a role='button' className="w-100 btn btn-dark fontSecondary mb-5" href='https://github.com/collindapper/collins-10-second-math-game' target="_blank">View GitHub Repo</a>
             </div>
           </Slide>

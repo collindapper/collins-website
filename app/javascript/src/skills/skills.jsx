@@ -1,131 +1,101 @@
 import React from 'react';
 import { safeCredentials, handleErrors } from '@utils/fetchHelper';
 import Layout from '@src/layout';
-import AddSkillWidget from './addSkillWidget';
 
 import './skills.scss';
 import Slide from 'react-reveal/Slide';
-import Bounce from 'react-reveal/Bounce';
+
 
 class Skills extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      userSkills: [],
-      show_widget: false,
-      authenticated: false,
-      username: '',
-    }
-  }
-
-  componentDidMount() {
-    this.getAllUserSkills()
-
-    fetch('/api/authenticated')
-      .then(handleErrors)
-      .then(data => {
-        this.setState({
-          authenticated: data.authenticated,
-          username: data.username,
-        })
-      })
-  }
-
-  getAllUserSkills() {
-
-    fetch('/api/skills/')
-      .then(handleErrors)
-      .then(data => {
-        console.log('data', data)
-        this.setState({
-          userSkills: data.skills,
-        })
-      })
-  }
-
-  deleteSkill = (e) => {
-    e.preventDefault();
-    let skillEl = e.target.closest(".skills-wrap")
-    let skillId = skillEl.getAttribute('id')
-
-    fetch(`/api/skills/${skillId}`, safeCredentials({
-      method: 'DELETE',
-    }))
-      .then(handleErrors)
-      .then(data => {
-        if (data.success) {
-          this.getAllUserSkills()
-        }
-      })
-      .catch(error => {
-        this.setState({
-          error: 'Could not delete skill.',
-        })
-      })
-  }
-
-  toggle = () => {
-    this.setState({
-      show_widget: !this.state.show_widget,
-    })
+    
   }
 
   render () {
-    const { authenticated, username, userSkills, show_widget } = this.state;
 
     return (
       <Layout>
         <div className="container skillsContainer py-4">
           <div className="d-flex justify-content-between align-items-center mb-4">
             <Slide left>
-            <p className="heading mb-0 display-1 fontPrimary"><strong>Skills</strong></p>
+            <p className="heading mb-0 display-3 fontPrimary"><strong>Skills</strong></p>
             </Slide>
-
-            {(authenticated) ? <a className="btn p-2 mx-2" role="button" onClick={this.toggle}>Add a new skill</a> : <div></div>}
           </div>
-
-          {show_widget ? <AddSkillWidget /> : <div></div>}
-
-          {(userSkills.length != 0)
+          <br/>
+          <div className="d-flex align-items-center mb-4">
+            <Slide left>
+            <h2 className="fontPrimary mx-auto">Programming Languages and Frameworks</h2>
+            </Slide>
+          </div>
           
-          ?
-          <div className="row d-flex justify-content-center">
-            {userSkills.map(skill => {
-              return (
-                <Bounce right>
-                <div key={skill.id} id={skill.id} className="skills-wrap p-2 mb-3 rounded col-10 col-md-5 col-xxl-3 mx-1">
-                    <div className="row d-flex flex-column px-3">
-                      <h2 className="mb-auto fontPrimary">{skill.title}</h2>
-
-                      {(skill.certification_url !== 'NA')
-                      ?
-                      <a className="skillLinks btn btn-primary w-100 mt-5 mb-2 fontSecondary" role="button" target="_blank" href={skill.certification_url}>Certification PDF</a>
-                      :
-                      <div className="mt-5"></div>
-                      }
-
-                      <a className="mb-0 skillLinks btn btn-primary w-100 fontSecondary" role="button" target="_blank" href={skill.linkedin_url}>LinkedIn Endorsements</a>
-                      
-                      
-                      {(authenticated)
-                      ?
-                      <button type="submit" className="btn btn-outline-danger btn-delete ml-auto me-2 mt-5" onClick={this.deleteSkill}>Delete Skill</button>
-                      :
-                      <div></div>
-                      }
-
-                    </div>
-                </div>
-                </Bounce>
-              )
-            })}
+          <div className='d-flex row justify-content-around mb-md-4'>
+            <div className='skillBox rounded shadow-lg col-md-3 col-11 py-3 mb-2'>
+              <h1 className='text-center'><i className="fab fa-js-square"></i></h1>
+              <h3 className='fontSecondary text-center'>JavaScript</h3>
+            </div>
+            <div className='skillBox rounded shadow-lg col-md-3 col-11 py-3 mb-2'>
+              <h1 className='text-center'><i className="fab fa-react"></i></h1>
+              <h3 className='fontSecondary text-center'>ReactJS</h3>
+            </div>
+            <div className='skillBox rounded shadow-lg col-md-3 col-11 py-3 mb-2'>
+              <h1 className='text-center'><i className="fab fa-html5"></i></h1>
+              <h3 className='fontSecondary text-center'>HTML</h3>
+            </div>
           </div>
 
-          :
-          <div className="border border-secondary rounded text-center">
-            <p className="py-4 mb-0">You don't have any skills.</p>
+          <div className='d-flex row justify-content-around mb-md-4'>
+            <div className='skillBox rounded shadow-lg col-md-3 col-11 py-3 mb-2'>
+              <h1 className='text-center'><i className="fab fa-css3-alt"></i></h1>
+              <h3 className='fontSecondary text-center'>CSS</h3>
+            </div>
+            <div className='skillBox rounded shadow-lg col-md-3 col-11 py-3 mb-2'>
+              <h1 className='text-center'><i className="fa-solid fa-code"></i></h1>
+              <h3 className='fontSecondary text-center'>Ruby</h3>
+            </div>
+            <div className='skillBox rounded shadow-lg col-md-3 col-11 py-3 mb-2'>
+              <h1 className='text-center'><i className="fa-solid fa-code"></i></h1>
+              <h3 className='fontSecondary text-center'>Ruby on Rails</h3>
+            </div>
           </div>
-          }
+
+          <div className='d-flex row justify-content-around'>
+            <div className='skillBox rounded shadow-lg col-md-3 col-11 py-3 mb-2'>
+              <h1 className='text-center'><i className="fa-solid fa-laptop-code"></i></h1>
+              <h3 className='fontSecondary text-center'>Full-Stack Software Development</h3>
+            </div>
+          </div>
+          <br/>
+
+
+          <div className="d-flex align-items-center mb-4 mt-4">
+            <Slide left>
+            <h2 className="fontPrimary mx-auto">Information Technology</h2>
+            </Slide>
+          </div>
+          
+          <div className='d-flex row justify-content-around mb-md-4'>
+            <div className='skillBox rounded shadow-lg col-md-3 col-11 py-3 mb-2'>
+              <h1 className='text-center'><i className="fa-brands fa-windows"></i></h1>
+              <h3 className='fontSecondary text-center'>Windows</h3>
+            </div>
+            <div className='skillBox rounded shadow-lg col-md-3 col-11 py-3 mb-2'>
+              <h1 className='text-center'><i className="fa-brands fa-linux"></i></h1>
+              <h3 className='fontSecondary text-center'>Linux</h3>
+            </div>
+            <div className='skillBox rounded shadow-lg col-md-3 col-11 py-3 mb-2'>
+              <h1 className='text-center'><i className="fa-brands fa-ubuntu"></i></h1>
+              <h3 className='fontSecondary text-center'>Ubuntu</h3>
+            </div>
+          </div>
+
+          <div className='d-flex row justify-content-around mb-md-4'>
+            <div className='skillBox rounded shadow-lg col-md-3 col-11 py-3 mb-2'>
+              <h1 className='text-center'><i class="fa-brands fa-microsoft"></i></h1>
+              <h3 className='fontSecondary text-center'>Microsoft Office</h3>
+            </div>
+          </div>
+          
         </div>
       </Layout>
     );

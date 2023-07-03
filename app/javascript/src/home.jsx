@@ -51,8 +51,25 @@ class Home extends React.Component {
           </Fade>
         </div> 
 
-        <div className="container">
-          <div className="row">
+        <div className="d-flex row container mx-auto">
+            <div className="d-flex arrow bounce mt-5 mb-3">
+              <h4 className="text-center fontPrimary me-2">Certifications</h4>
+              <i class="fa-solid fa-chevron-down mt-1"></i>
+            </div>
+
+            <div className="column">
+              <img src={require('./certImages/Pre-Security.jpg')} />
+              <img src={require('./certImages/Full-Stack Deployment Certification.jpg')} />
+            </div>
+            
+            <div className="column">
+              <img src={require('./certImages/Intro to Cyber Security.jpg')} />
+              <img src={require('./certImages/JavaScript Certification.jpg')} />
+            </div>
+            <a role='button' className="viewProjects btn btn-outline-dark mt-4 fontSecondary" href='/skills'>View all certifications</a>
+          </div>
+
+          <div className="d-flex row container mx-auto mt-5">
             <div className="d-flex arrow bounce mt-5 mb-3">
               <h4 className="text-center fontPrimary me-2">Projects</h4>
               <i class="fa-solid fa-chevron-down mt-1"></i>
@@ -67,12 +84,8 @@ class Home extends React.Component {
               <img src={require('./images/currency converter.jpg')} />
               <img src={require('./images/Twitter.png')} />
             </div>
-            
             <a role='button' className="viewProjects btn btn-outline-dark mt-4 fontSecondary" href='/projects'>View all projects</a>
-
           </div>
-        </div>
-
         
       </Layout>
     )

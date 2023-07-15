@@ -15,8 +15,8 @@ class StaticPagesController < ApplicationController
     render 'skills'
   end
 
-  def contact
-    render 'contact'
+  def cyber
+    render 'cyber'
   end
   
 end

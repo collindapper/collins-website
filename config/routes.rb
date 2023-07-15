@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     get '/about' => 'static_pages#about'
     get '/projects' => 'static_pages#projects'
     get '/skills' => 'static_pages#skills'
-    get '/contact' => 'static_pages#contact'
+    get '/cyber' => 'static_pages#cyber'
 
     namespace :api do
       # USERS

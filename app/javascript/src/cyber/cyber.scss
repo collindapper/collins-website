@@ -3,12 +3,14 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   opacity: 0.88;
+  color: #c3e3eb;
 }
 
 .fontSecondary {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   opacity: 0.88;
+  color: #061e45;
 }
 
 @media (min-width: 768px) {
@@ -20,28 +22,9 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #007ea7, #007ea7);
+  background: linear-gradient(to bottom, #36454F, #36454F);
 }
 
 .heading {
-  text-shadow: -3px 0 #B99C6B;
-}
-
-.contactContainer {
-  height: 100vh;
-}
-
-.mapContainer {
-  height: 600px;
-  background-position: center;
-  background-size: cover;
-}
-
-.contactForm {
-  background-color: #B99C6B;
-}
-
-.contactLink {
-  text-decoration: none;
-  color: black;
+  text-shadow: -5px 0 #061e45;
 }

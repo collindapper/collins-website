@@ -3,12 +3,21 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   opacity: 0.88;
+  color: #c3e3eb;
+}
+
+.fontPrimary.title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  opacity: 0.88;
+  color: #061e45;
 }
 
 .fontSecondary {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   opacity: 0.88;
+  color: #c3e3eb;
 }
 
 @media (min-width: 768px) {
@@ -21,9 +30,9 @@
 
 body {
   background: 
-  linear-gradient(to bottom, #007ea7, #007ea7);
+  linear-gradient(to bottom, #36454F, #36454F);
 }
 
 .heading {
-  text-shadow: -3px 0 #B99C6B;
+  text-shadow: -5px 0 #061e45;
 }

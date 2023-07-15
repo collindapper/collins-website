@@ -3,12 +3,14 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   opacity: 0.8;
+  color: #061e45;
 }
 
 .fontSecondary {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   opacity: 0.8;
+  color: #061e45;
 }
 
 .fontNavIcons {
@@ -23,7 +25,11 @@
 
 nav {
   //backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.66);
+  background-color: #c3e3eb;
+}
+
+i {
+  color: #061e45;
 }
 
 .nav-item {
@@ -55,7 +61,7 @@ nav {
   display: block;
   border-radius: 2px;
   height: 1px;
-  background: rgb(0, 0, 0);
+  background: #061e45;
   transition: 0.3s;
 }
 

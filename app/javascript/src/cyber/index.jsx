@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Contact from './contact';
+import Cyber from './cyber';
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Contact />,
+    <Cyber />,
     document.body.appendChild(document.createElement('div')),
   )
 })

@@ -3,12 +3,14 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   opacity: 0.88;
+  color: #061e45;
 }
 
 .fontSecondary {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   opacity: 0.88;
+  color: #c3e3eb;
 }
 
 @media (min-width: 768px) {
@@ -21,17 +23,16 @@
 
 body {
   background: 
-  linear-gradient(to bottom, #007ea7, #007ea7);
+  linear-gradient(to bottom, #36454F, #36454F);
 }
 
 // PROJECTS PAGE
 .heading {
-  text-shadow: -3px 0 #B99C6B;
-}
-
-.projects-wrap {
-  background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: -5px 5px #B99C6B, -5px 5px #B99C6B;
+  text-shadow: -5px 0 #061e45;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  opacity: 0.88;
+  color: #c3e3eb;
 }
 
 .project-image {
@@ -69,15 +70,6 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-@media (min-width: 1200px) {
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
 }
 
 /* Position the front and back side */
@@ -85,8 +77,6 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -170,11 +160,18 @@ body {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: rgba(255, 255, 255, 0.66);
+  background-color: #061e45;
   color: #121212;
   transform: rotateY(180deg);
 } 
 
-.viewRepo {
-  width: 80%;
+a.viewRepo {
+  color: #061e45;
+  width: 100%;
+  border: 1px solid #061e45;
+}
+
+a.viewRepo:hover {
+  color: #36454F;
+  background-color: #061e45;
 }

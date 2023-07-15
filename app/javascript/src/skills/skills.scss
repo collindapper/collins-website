@@ -3,12 +3,21 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   opacity: 0.88;
+  color: #c3e3eb;
+}
+
+h1.fontPrimary {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  opacity: 0.88;
+  color: #061e45;
 }
 
 .fontSecondary {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   opacity: 0.88;
+  color: #061e45;
 }
 
 @media (min-width: 768px) {
@@ -21,23 +30,132 @@
 
 body {
   background: 
-  linear-gradient(to bottom, #007ea7, #007ea7);
+  linear-gradient(to bottom, #36454F, #36454F);
 }
 
 // Skills Heading
 .heading {
-  text-shadow: -3px 0 #B99C6B;
+  text-shadow: -5px 0 #061e45;
 }
 
-.skills-wrap {
-  background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: -5px 5px #B99C6B, -5px 5px #B99C6B;
+.javascriptImg {
+  background-image: url(../skillsImages/javascript.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
 }
 
-// Skill Boxes
-.skillBox {
-  background-color: rgba(255, 255, 255, 0.66);
-  
+.reactImg {
+  background-image: url(../skillsImages/react.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.htmlImg {
+  background-image: url(../skillsImages/HTML\ png.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.cssImg {
+  background-image: url(../skillsImages/CSS3_logo.svg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.rubyImg {
+  background-image: url(../skillsImages/ruby.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.railsImg {
+  background-image: url(../skillsImages/rails.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.nodeImg {
+  background-image: url(../skillsImages/nodejs.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.bootstrapImg {
+  background-image: url(../skillsImages/bootstrap.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.psqlImg {
+  background-image: url(../skillsImages/postgress.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.herokuImg {
+  background-image: url(../skillsImages/heroku.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.linuxImg {
+  background-image: url(../skillsImages/linux.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.windowsImg {
+  background-image: url(../skillsImages/windows.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.gitImg {
+  background-image: url(../skillsImages/git.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.ubuntuImg {
+  background-image: url(../skillsImages/ubuntu.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
+.proxmoxImg {
+  background-image: url(../skillsImages/proxmox.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
 }
 
 img {

@@ -20,7 +20,7 @@ class Home extends React.Component {
         <div className="HomeBody mb-5">
           <div className="row heroSection container mx-auto mt-5 d-flex align-content-center justify-content-center">
             <Fade left>
-            <div className="d-flex col-12 col-md-5 avatar"></div>
+            <div className="d-flex col-12 col-md-5 avatar shadow-lg"></div>
             </Fade>
 
             <Fade right>
@@ -28,8 +28,8 @@ class Home extends React.Component {
               <p className="display-1 text-center heading fontPrimary"><strong>Collin Dapper</strong></p>
               <p className="display-6 text-center subHeading fontSecondary mb-auto">Full-Stack Software Developer</p>
               <div className="d-flex justify-content-center mt-2">
-                <a className="nav-link text-black display-6 text-center" href="https://www.linkedin.com/in/collin-dapper-a1b59a152/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
-                <a className="nav-link text-black display-6 text-center" href="https://github.com/collindapper" target="_blank"><i className="fa-brands fa-github"></i></a>
+                <a className="nav-link text-black display-6 text-center" href="https://www.linkedin.com/in/collin-dapper-a1b59a152/" target="_blank"><i className="fa-brands fa-linkedin homeLink"></i></a>
+                <a className="nav-link text-black display-6 text-center" href="https://github.com/collindapper" target="_blank"><i className="fa-brands fa-github homeLink"></i></a>
               </div>
             </div>
             </Fade>
@@ -42,7 +42,7 @@ class Home extends React.Component {
         <div className="d-flex row container mx-auto mb-5">
           <div className="d-flex arrow bounce mt-5 mb-3">
             <h4 className="text-center fontPrimary me-2">About Me</h4>
-            <i class="fa-solid fa-chevron-down mt-1"></i>
+            <i class="fa-solid fa-chevron-down mt-1 arrowDown"></i>
           </div>
           <Fade left>
           <div className="col-12 aboutHeroSection my-auto py-4 rounded">
@@ -54,7 +54,7 @@ class Home extends React.Component {
         <div className="d-flex row container mx-auto">
             <div className="d-flex arrow bounce mt-5 mb-3">
               <h4 className="text-center fontPrimary me-2">Certifications</h4>
-              <i class="fa-solid fa-chevron-down mt-1"></i>
+              <i class="fa-solid fa-chevron-down mt-1 arrowDown"></i>
             </div>
 
             <div className="column">
@@ -66,13 +66,13 @@ class Home extends React.Component {
               <img src={require('./certImages/Intro to Cyber Security.jpg')} />
               <img src={require('./certImages/JavaScript Certification.jpg')} />
             </div>
-            <a role='button' className="viewProjects btn btn-outline-dark mt-4 fontSecondary" href='/skills'>View all certifications</a>
+            <a role='button' className="viewProjects button rounded mt-4 py-2 text-center fontSecondary" href='/skills'>View all certifications</a>
           </div>
 
           <div className="d-flex row container mx-auto mt-5">
             <div className="d-flex arrow bounce mt-5 mb-3">
               <h4 className="text-center fontPrimary me-2">Projects</h4>
-              <i class="fa-solid fa-chevron-down mt-1"></i>
+              <i class="fa-solid fa-chevron-down mt-1 arrowDown"></i>
             </div>
 
             <div className="column">
@@ -84,7 +84,7 @@ class Home extends React.Component {
               <img src={require('./images/currency converter.jpg')} />
               <img src={require('./images/Twitter.png')} />
             </div>
-            <a role='button' className="viewProjects btn btn-outline-dark mt-4 fontSecondary" href='/projects'>View all projects</a>
+            <a role='button' className="viewProjects button rounded mt-4 py-2 text-center fontSecondary" href='/projects'>View all projects</a>
           </div>
         
       </Layout>

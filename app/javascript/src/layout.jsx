@@ -42,7 +42,7 @@ class Layout extends React.Component {
                     <a className="nav-link text-black fontSecondary" href='/skills'>Skills</a>
                   </li>
                   <li className="nav-item fontNavigation">
-                    <a className="nav-link text-black fontSecondary" href='/contact'>Contact</a>
+                    <a className="nav-link text-black fontSecondary" href='/cyber'>Cyber</a>
                   </li>
                 </ul>
               </div>
@@ -50,10 +50,10 @@ class Layout extends React.Component {
               <div className="d-flex col-4">
                 <ul className="navbar-nav ms-auto me-5">
                   <li className="nav-item fontNavigation">
-                    <a className="nav-link text-black fontSecondary" href="https://www.linkedin.com/in/collin-dapper-a1b59a152/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
+                    <a className="nav-link text-black fontSecondary" href="https://www.linkedin.com/in/collin-dapper-a1b59a152/" target="_blank"><i className="fa-brands fa-linkedin navLink"></i></a>
                   </li>
                   <li className="nav-item fontNavigation">
-                    <a className="nav-link text-black fontSecondary" href="https://github.com/collindapper" target="_blank"><i className="fa-brands fa-github"></i></a>
+                    <a className="nav-link text-black fontSecondary" href="https://github.com/collindapper" target="_blank"><i className="fa-brands fa-github navLink"></i></a>
                   </li>
                 </ul>
               </div>
@@ -82,17 +82,17 @@ class Layout extends React.Component {
                     <a className="nav-link text-black fontSecondary" href="/skills">Skills</a>
                   </li>
                   <li className="nav-item fontNavigation text-center">
-                    <a className="nav-link text-black fontSecondary" href="/contact">Contact</a>
+                    <a className="nav-link text-black fontSecondary" href="/cyber">Cyber</a>
                   </li>
                 </ul>
 
                 <div className="row mx-auto">
                   <ul className="d-flex navbar-nav list-group-horizontal justify-content-between">
                     <li className="nav-item fontNavigation">
-                      <a className="nav-link text-black fontSecondary" href="https://www.linkedin.com/in/collin-dapper-a1b59a152/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
+                      <a className="nav-link text-black fontSecondary" href="https://www.linkedin.com/in/collin-dapper-a1b59a152/" target="_blank"><i className="fa-brands fa-linkedin navLink"></i></a>
                     </li>                  
                     <li className="nav-item fontNavigation">
-                      <a className="nav-link text-black fontSecondary" href="https://github.com/collindapper" target="_blank"><i className="fa-brands fa-github"></i></a>
+                      <a className="nav-link text-black fontSecondary" href="https://github.com/collindapper" target="_blank"><i className="fa-brands fa-github navLink"></i></a>
                     </li>
                   </ul>
                 </div>

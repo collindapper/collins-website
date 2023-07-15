@@ -22,14 +22,14 @@ class About extends React.Component {
 
             <Slide right>
             <div className="col-12 col-lg-8 my-md-auto pt-md-4 ps-md-5">
-              <h1 className="text-black fontPrimary"><strong>Full-Stack Developer - collindapper.com</strong></h1>
+              <h1 className="fontPrimary title">Full-Stack Developer - collindapper.com</h1>
               <p className="bodySection fontSecondary"><secondary>April 2022 - Current</secondary></p>
               <br />
 
-              <h1 className="text-black fontPrimary"><strong>Flow Process Assistant, Operations - Amazon.com</strong></h1>
-              <h5 className="text-black fontSecondary">Develop and Implement efficient work-flow practices to increase productivity and operation performance, while maintaining the highest safety and quality standards for my team.</h5>
+              <h1 className="fontPrimary title">Flow Process Assistant, Operations - Amazon.com</h1>
+              <h5 className="fontSecondary">Develop and Implement efficient work-flow practices to increase productivity and operation performance, while maintaining the highest safety and quality standards for my team.</h5>
               <br/>
-              <h5 className="text-black fontSecondary">
+              <h5 className="fontSecondary title">
               - Standardize flow processes to streamline operation growth.<br/>
               <br/>
               - Develop tools to track and analyze cost and production trends<br/>
@@ -44,12 +44,12 @@ class About extends React.Component {
               <br />
 
 
-              <h1 className="text-black fontPrimary"><strong>Full-Stack Developer Student - Altcademy</strong></h1>
-              <h5 className="text-black fontSecondary">Drafted, Wire-framed, and wrote well-designed, testable and efficient code using the best software development practice.
+              <h1 className="fontPrimary title">Full-Stack Developer Student - Altcademy</h1>
+              <h5 className="fontSecondary">Drafted, Wire-framed, and wrote well-designed, testable and efficient code using the best software development practice.
                 Developed website layouts and user interfaces using standard HTML and CSS, as well as, integrating data from various
                 back-end services and databases</h5>
                 <br/>
-              <h5 className="text-black fontSecondary">
+              <h5 className="fontSecondary">
                 - Developed three user-friendly websites using React JS and JavaScript, along with several other programming
                 languages, libraries and frameworks.<br/>
                 <br/>
@@ -64,12 +64,12 @@ class About extends React.Component {
               <p className="bodySection fontSecondary"><secondary>November 2021 - September 2022</secondary></p>
               <br />
 
-              <h1 className="text-black fontPrimary"><strong>Manager I, Operations - Amazon.com</strong></h1>
-              <h5 className="text-black fontSecondary">Lead a team of hourly workforce and engaged my team during their shifts to maintain the highest levels of safety, quality,
+              <h1 className="fontPrimary title">Manager I, Operations - Amazon.com</h1>
+              <h5 className="fontSecondary">Lead a team of hourly workforce and engaged my team during their shifts to maintain the highest levels of safety, quality,
               attendance, and performance. Maintained our customer expectations to ensure customer orders were delivered at the
               correct place and time.</h5>
               <br/>
-              <h5 className="text-black fontSecondary">
+              <h5 className="fontSecondary">
               - Coach, manage, and develop a team of 200 Amazon associates<br/>
               <br/>
               - Communicate policies to my team and act as the primary information source for the team<br/>
@@ -104,18 +104,18 @@ class About extends React.Component {
 
             <Slide right>
             <div className="col-12 col-lg-8 my-md-auto pt-md-4 ps-md-5">
-              <h1 className="text-black fontPrimary"><strong>Altcademy</strong></h1>
-              <h3 className="text-black fontPrimary">Full-Stack Web Development</h3>
+              <h1 className="fontPrimary title">Altcademy</h1>
+              <h3 className="fontPrimary">Full-Stack Web Development</h3>
               <p className="bodySection fontSecondary"><secondary>November 2021 - September 2022</secondary></p>
               <br />
 
-              <h1 className="text-black fontPrimary"><strong>University of Nevada, Reno</strong></h1>
-              <h3 className="text-black fontPrimary">Bachelor of Science in Finance. Minor in Economics</h3>
+              <h1 className="fontPrimary title">University of Nevada, Reno</h1>
+              <h3 className="fontPrimary">Bachelor of Science in Finance. Minor in Economics</h3>
               <p className="bodySection fontSecondary"><secondary>January 2018 - August 2020</secondary></p>
               <br />
 
-              <h1 className="text-black fontPrimary"><strong>San Joaquin Delta College</strong></h1>
-              <h3 className="text-black fontPrimary">Associates in Math and Science(AA-S)/Associates in Business Administration(AS-T)</h3>
+              <h1 className="fontPrimary title">San Joaquin Delta College</h1>
+              <h3 className="fontPrimary">Associates in Math and Science(AA-S)/Associates in Business Administration(AS-T)</h3>
               <p className="bodySection fontSecondary"><secondary>June 2015 - December 2017</secondary></p>
               <br />
             </div>

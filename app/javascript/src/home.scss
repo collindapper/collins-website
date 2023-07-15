@@ -3,12 +3,14 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   opacity: 0.8;
+  color: #c3e3eb;
 }
 
 .fontSecondary {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   opacity: 0.8;
+  color: #061e45;
 }
 
 @media (min-width: 768px) {
@@ -16,13 +18,13 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     opacity: 0.88;
+    color: #061e45;
   }
 }
 
 // Hero Section
-
 .avatar {
-  background-image: url(./images/blue\ background.jpg);
+  background-image: url(./images/dark\ blue\ background.png);
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -31,17 +33,24 @@
 }
 
 .heading {
-  text-shadow: -3px 0 #B99C6B;
+  text-shadow: -5px 0 #061e45;
 }
 
 body {
   background: 
-  linear-gradient(to bottom, #007ea7, #007ea7);
+  linear-gradient(to bottom, #36454F, #36454F);
 }
 
 a { 
-  color: white;
   text-decoration: none;
+}
+
+i.homeLink {
+  color: #c3e3eb;
+}
+
+i.arrowDown {
+  color: #061e45;
 }
 
 // About Section
@@ -68,8 +77,8 @@ a {
 }
 
 .aboutHeroSection {
-  background-color: rgba(255, 255, 255, 0.66);
-  box-shadow: -5px 5px #B99C6B, -5px 5px #B99C6B;
+  background-color: #c3e3eb;
+  box-shadow: -5px 5px #061e45, -5px 5px #061e45;
 }
 
 //Project Section
@@ -101,7 +110,14 @@ a {
 }
 
 .viewProjects {
-  color: #121212;
+  border: 1px solid #061e45;
+  text-decoration: none;
+  color: #061e45;
+}
+
+.viewProjects:hover {
+  background-color: #061e45;
+  color: #36454F; 
 }
 
 // FOOTER

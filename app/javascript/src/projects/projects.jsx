@@ -26,6 +26,20 @@ class Projects extends React.Component {
          {/* Tablet/Desktop Screens */}
          <div className="row d-none d-md-flex">
 
+         <Slide right>
+            <div className="flip-card col-6 mb-1 mb-md-4">
+              <div className="flip-card-inner">
+                <div className="flip-card-front websiteImg" >
+                </div>
+              </div>
+            </div>
+            <div className="col-6">
+              <h4 className="fontPrimary mt-2">Personal Website</h4>
+              <p className="fontSecondary">Full-Stack Personal Website to display facts about me, professional experience, projects, skills, and insight on my journey into Information Technology, that you are currently viewing this on!</p>
+              <a role='button' className="viewRepo btn mt-2 fontSecondary" href='https://github.com/collindapper/collins-website' target="_blank">View GitHub Repo</a>
+            </div>
+          </Slide>
+
           <Slide right>
             <div className="flip-card col-6 mb-1 mb-md-4">
               <div className="flip-card-inner">
@@ -35,7 +49,7 @@ class Projects extends React.Component {
             </div>
             <div className="col-6">
               <h4 className="fontPrimary mt-2">Full-Stack Airbnb Website</h4>
-              <p className="fontSecondary">Complete Full-Stack prototype of Airbnb website using Stripe payments web-hook to complete bookings of properties. API developed using Ruby on Rails. Upon user creation, you have the ability to post properties to be booked, and book and reserve other users posted properties. Programming languages and libraries used; HTML, CSS, JavaScript, Reactjs, REST APIs, Ruby, Ruby on Rails, AWS S3, Stripe Web-hook.</p>
+              <p className="fontSecondary">Full-Stack prototype of Airbnb website using Stripe payments web-hook to complete bookings of properties. API developed using Ruby on Rails. Upon user creation, you have the ability to post properties to be booked, and book and reserve other users posted properties. Programming languages and libraries used; HTML, CSS, JavaScript, Reactjs, REST APIs, Ruby, Ruby on Rails, AWS S3, Stripe Web-hook.</p>
               <a role='button' className="viewRepo btn mt-2 fontSecondary" href='https://github.com/collindapper/airbnb_clone' target="_blank">View GitHub Repo</a>
             </div>
           </Slide>
@@ -213,6 +227,20 @@ class Projects extends React.Component {
           {/* Phone Screens */}
           <div className="row d-flex d-md-none">
 
+          <Slide right>
+            <div className="flip-card col-12 mb-1">
+              <div className="flip-card-inner">
+                <div className="flip-card-front websiteImg" >
+                </div>
+              </div>
+            </div>
+            <div className="col-12">
+              <h4 className="fontPrimary mt-2 text-center">Personal Website</h4>
+              <p className="fontSecondary text-center">Full-Stack Personal Website to display facts about me, professional experience, projects, skills, and insight on my journey into Information Technology, that you are currently viewing this on!</p>
+              <a role='button' className="viewRepo btn mt-2 fontSecondary mb-5" href='https://github.com/collindapper/collins-website' target="_blank">View GitHub Repo</a>
+            </div>
+          </Slide>
+          
           <Slide right>
             <div className="flip-card col-12 mb-1">
               <div className="flip-card-inner">

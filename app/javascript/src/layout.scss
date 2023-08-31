@@ -3,14 +3,14 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   opacity: 0.8;
-  color: #061e45;
+  color: #121212;
 }
 
 .fontSecondary {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   opacity: 0.8;
-  color: #061e45;
+  color: #121212;
 }
 
 .fontNavIcons {
@@ -23,21 +23,26 @@
   color: white;
 }
 
-nav {
+.navbar {
   //backdrop-filter: blur(10px);
-  background-color: #c3e3eb;
+  //background-color: rgb(255, 255, 255);
+  width: 100%;
+  //border-radius: 50px;
+}
+
+.scrolled-down {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  
 }
 
 i {
   color: #061e45;
 }
 
-.nav-item {
-  font-size: 18px;
-}
-
 .nav-item:hover {
   transform: scale(1.2);
+  text-decoration: underline;
 }
 
 //MOBILE NAV TOGGLE

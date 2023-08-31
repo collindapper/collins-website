@@ -3,28 +3,28 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   opacity: 0.88;
-  color: #c3e3eb;
+  color: #faf9f6;
 }
 
 h1.fontPrimary {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   opacity: 0.88;
-  color: #061e45;
+  color: #121212;
 }
 
 .fontSecondary {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   opacity: 0.88;
-  color: #061e45;
+  color: #121212;
 }
 
 h3.fontSecondary {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   opacity: 0.88;
-  color: #c3e3eb;
+  color: #faf9f6;
 }
 
 @media (min-width: 768px) {
@@ -36,13 +36,31 @@ h3.fontSecondary {
 }
 
 body {
-  background: 
-  linear-gradient(to bottom, #36454F, #36454F);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  height: 100%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.divider {
+  border-top: 1px solid #121212;
 }
 
 // Skills Heading
 .heading {
-  text-shadow: -5px 0 #061e45;
+  text-shadow: -5px 0 #121212;
 }
 
 .javascriptImg {
@@ -163,6 +181,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 150px;
+}
+
+.skillBox {
+  height: 50%;
 }
 
 img {

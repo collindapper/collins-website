@@ -23,116 +23,113 @@ class Skills extends React.Component {
             </Slide>
           </div>
           <br/>
-          <div className="d-flex align-items-center mb-4">
-            <Slide left>
-            <h1 className="fontPrimary mx-auto">Programming Languages</h1>
-            </Slide>
-          </div>
           
           <div className='d-flex row justify-content-around mb-md-4'>
             <div className='row skillBox col-lg-4 col-12 py-3 mb-2'>
-              <div className='text-center col-6 javascriptImg'></div>
-              <h2 className='fontPrimary text-center col-6 my-auto'>JavaScript</h2>
+              <div className='text-center col-7 javascriptImg mx-auto'></div>
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
+              <h2 className='fontPrimary text-center col-12'>JavaScript</h2>
+              <h5 className='fontPrimary text-center col-12'>Programming Language</h5>
             </div>
             <div className='row skillBox col-lg-4 col-12 py-3 mb-2'>
-              <div className='text-center col-6 rubyImg'></div>
-              <h2 className='fontPrimary text-center col-6 my-auto'>Ruby</h2>
+              <div className='text-center col-7 rubyImg mx-auto'></div>
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
+              <h2 className='fontPrimary text-center col-12'>Ruby</h2>
+              <h5 className='fontPrimary text-center col-12'>Programming Language</h5>
+            </div>
+            <div className='row skillBox col-lg-4 col-12 py-3 mb-2'>
+              <div className='text-center col-7 reactImg mx-auto'></div>
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
+              <h2 className='fontPrimary text-center col-12'>React.js</h2>
+              <h5 className='fontPrimary text-center col-12'>Front-End Development</h5>
             </div>
           </div>
           <br/>
-
-          <div className="d-flex align-items-center mb-4">
-            <Slide left>
-            <h1 className="fontPrimary mx-auto">Frontend Development</h1>
-            </Slide>
-          </div>
           
           <div className='d-flex row justify-content-around mb-md-4'>
             <div className='row skillBox col-lg-4 col-12 py-3 mb-2'>
-              <div className='text-center col-6 reactImg'></div>
-              <h2 className='fontPrimary text-center col-6 my-auto'>ReactJS</h2>
+              <div className='text-center col-7 htmlImg mx-auto'></div>
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
+              <h2 className='fontPrimary text-center col-12'>HTML</h2>
+              <h5 className='fontPrimary text-center col-12'>Front-End Development</h5>
             </div>
             <div className='row skillBox col-lg-4 col-12 py-3 mb-2'>
-              <div className='text-center col-6 htmlImg'></div>
-              <h2 className='fontPrimary text-center col-6 my-auto'>HTML</h2>
+              <div className='text-center col-7 cssImg mx-auto'></div>
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
+              <h2 className='fontPrimary text-center col-12'>CSS</h2>
+              <h5 className='fontPrimary text-center col-12'>Front-End Development</h5>
             </div>
             <div className='row skillBox col-lg-4 col-12 py-3 mb-2'>
-              <div className='text-center col-6 cssImg'></div>
-              <h2 className='fontPrimary text-center col-6 my-auto'>CSS</h2>
-            </div>
-          </div>
-          <div className='d-flex row justify-content-around mb-md-4'>
-            <div className='row skillBox col-lg-4 col-12 py-3 mb-2'>
-              <div className='text-center col-6 bootstrapImg'></div>
-              <h2 className='fontPrimary text-center col-6 my-auto'>Bootstrap</h2>
+              <div className='text-center col-7 bootstrapImg mx-auto'></div>
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
+              <h2 className='fontPrimary text-center col-12'>Bootstrap</h2>
+              <h5 className='fontPrimary text-center col-12'>Front-End Development</h5>
             </div>
           </div>
           <br/>
-
-          <div className="d-flex align-items-center mb-4">
-            <Slide left>
-            <h1 className="fontPrimary mx-auto">Backend Development, BaaS, and Databases</h1>
-            </Slide>
-          </div>
           
           <div className='d-flex row justify-content-around mb-md-4'>
             <div className='row skillBox col-lg-4 col-12 py-3 mb-2'>
-              <div className='text-center col-6 nodeImg'></div>
-              <h2 className='fontPrimary text-center col-6 my-auto'>NodeJS</h2>
+              <div className='text-center col-7 nodeImg mx-auto'></div>
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
+              <h2 className='fontPrimary text-center col-12'>Node.js</h2>
+              <h5 className='fontPrimary text-center col-12'>Back-End Development</h5>
             </div>
             <div className='row skillBox col-lg-4 col-12 py-3 mb-2'>
-              <div className='text-center col-6 psqlImg'></div>
-              <h2 className='fontPrimary text-center col-6 my-auto'>Postgresql</h2>
+              <div className='text-center col-7 psqlImg mx-auto'></div>
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
+              <h2 className='fontPrimary text-center col-12'>Postgresql</h2>
+              <h5 className='fontPrimary text-center col-12'>Back-End Databases</h5>
             </div>
             <div className='row skillBox col-lg-4 col-12 py-3 mb-2'>
-              <div className='text-center col-6 herokuImg'></div>
-              <h2 className='fontPrimary text-center col-6 my-auto'>Heroku</h2>
+              <div className='text-center col-7 herokuImg mx-auto'></div>
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
+              <h2 className='fontPrimary text-center col-12'>Heroku</h2>
+              <h5 className='fontPrimary text-center col-12'>Backend-as-a-service (BaaS)</h5>
             </div>
           </div>
           <br/>
-
-          <div className="d-flex align-items-center mb-4">
-            <Slide left>
-            <h1 className="fontPrimary mx-auto">Frameworks</h1>
-            </Slide>
-          </div>
           
           <div className='d-flex row justify-content-around mb-md-4'>
             <div className='row skillBox col-lg-4 col-12 py-3 mb-2'>
-              <div className='text-center col-6 railsImg'></div>
-              <h2 className='fontPrimary text-center col-6 my-auto'>Ruby on Rails</h2>
+              <div className='text-center col-7 railsImg mx-auto'></div>
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
+              <h2 className='fontPrimary text-center col-12'>Ruby on Rails</h2>
+              <h5 className='fontPrimary text-center col-12'>Full-Stack Framework</h5>
+            </div>
+            <div className='row skillBox col-lg-4 col-12 py-3 mb-2'>
+              <div className='text-center col-7 linuxImg mx-auto'></div>
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
+              <h2 className='fontPrimary text-center col-12'>Linux</h2>
+              <h5 className='fontPrimary text-center col-12'>Open-Source Operating Systems</h5>
+            </div>
+            <div className='row skillBox col-lg-4 col-12 py-3 mb-2'>
+              <div className='text-center col-7 windowsImg mx-auto'></div>
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
+              <h2 className='fontPrimary text-center col-12'>Windows</h2>
+              <h5 className='fontPrimary text-center col-12'>Graphical Operating Systems</h5>
             </div>
           </div>
           <br/>
-
-          <div className="d-flex align-items-center mb-4">
-            <Slide left>
-            <h1 className="fontPrimary mx-auto">Information Technology</h1>
-            </Slide>
-          </div>
           
           <div className='d-flex row justify-content-around mb-md-4'>
             <div className='row skillBox col-lg-4 col-12 py-3 mb-2'>
-              <div className='text-center col-6 linuxImg'></div>
-              <h2 className='fontPrimary text-center col-6 my-auto'>Linux</h2>
+              <div className='text-center col-7 gitImg mx-auto'></div>
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
+              <h2 className='fontPrimary text-center col-12'>Git</h2>
+              <h5 className='fontPrimary text-center col-12'>Version Control System</h5>
             </div>
             <div className='row skillBox col-lg-4 col-12 py-3 mb-2'>
-              <div className='text-center col-6 windowsImg'></div>
-              <h2 className='fontPrimary text-center col-6 my-auto'>Windows</h2>
+              <div className='text-center col-7 ubuntuImg mx-auto'></div>
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
+              <h2 className='fontPrimary text-center col-12'>Ubuntu</h2>
+              <h5 className='fontPrimary text-center col-12'>Linux Distribution</h5>
             </div>
             <div className='row skillBox col-lg-4 col-12 py-3 mb-2'>
-              <div className='text-center col-6 gitImg'></div>
-              <h2 className='fontPrimary text-center col-6 my-auto'>Git</h2>
-            </div>
-          </div>
-          <div className='d-flex row justify-content-around mb-md-4'>
-            <div className='row skillBox col-lg-4 col-12 py-3 mb-2'>
-              <div className='text-center col-6 ubuntuImg'></div>
-              <h2 className='fontPrimary text-center col-6 my-auto'>Ubuntu</h2>
-            </div>
-            <div className='row skillBox col-lg-4 col-12 py-3 mb-2'>
-              <div className='text-center col-6 proxmoxImg'></div>
-              <h2 className='fontPrimary text-center col-6 my-auto'>Proxmox</h2>
+              <div className='text-center col-7 proxmoxImg mx-auto'></div>
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
+              <h2 className='fontPrimary text-center col-12'>Proxmox</h2>
+              <h5 className='fontPrimary text-center col-12'>Hosted Hypervisor</h5>
             </div>
           </div>
           <br/>
@@ -145,46 +142,55 @@ class Skills extends React.Component {
           </div>
 
           <div className='d-flex row justify-content-around mb-md-4'>
-            <div className='skillBox rounded col-md-3 col-11 py-2 mb-2'>
+            <div className='skillBox rounded col-md-4 col-11 py-2 mb-2'>
               <img src={require('../certImages/Pre-Security.jpg')} />
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
               <h3 className='fontSecondary text-center my-2'>Pre-Security</h3>
             </div>
-            <div className='skillBox rounded col-md-3 col-11 py-2 mb-2'>
+            <div className='skillBox rounded col-md-4 col-11 py-2 mb-2'>
               <img src={require('../certImages/Intro to Cyber Security.jpg')} />
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
               <h3 className='fontSecondary text-center my-2'>Intro to Cyber Security</h3>
             </div>
-            <div className='skillBox rounded col-md-3 col-11 py-2 mb-2'>
+            <div className='skillBox rounded col-md-4 col-11 py-2 mb-2'>
               <img src={require('../certImages/Full-Stack Deployment Certification.jpg')} />
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
               <h3 className='fontSecondary text-center my-2'>Full-Stack Deployment</h3>
             </div>
           </div>
 
           <div className='d-flex row justify-content-around mb-md-4'>
-            <div className='skillBox rounded col-md-3 col-11 py-2 mb-2'>
+            <div className='skillBox rounded col-md-4 col-11 py-2 mb-2'>
               <img src={require('../certImages/Ruby on Rails Certification.jpg')} />
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
               <h3 className='fontSecondary text-center my-3'>Ruby on Rails</h3>
             </div>
-            <div className='skillBox rounded col-md-3 col-11 py-2 mb-2'>
+            <div className='skillBox rounded col-md-4 col-11 py-2 mb-2'>
               <img src={require('../certImages/Ruby Programming.jpg')} />
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
               <h3 className='fontSecondary text-center my-3'>Ruby Programming</h3>
             </div>
-            <div className='skillBox rounded col-md-3 col-11 py-2 mb-2'>
+            <div className='skillBox rounded col-md-4 col-11 py-2 mb-2'>
               <img src={require('../certImages/ReactJS Development Certification.jpg')} />
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
               <h3 className='fontSecondary text-center my-3'>ReactJS Development</h3>
             </div>
           </div>
 
           <div className='d-flex row justify-content-around mb-md-4'>
-            <div className='skillBox rounded col-md-3 col-11 py-2 mb-2'>
+            <div className='skillBox rounded col-md-4 col-11 py-2 mb-2'>
               <img src={require('../certImages/Dynamic Website Development Certification.jpg')} />
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
               <h3 className='fontSecondary text-center my-3'>Dynamic Website Development</h3>
             </div>
-            <div className='skillBox rounded col-md-3 col-11 py-2 mb-2'>
+            <div className='skillBox rounded col-md-4 col-11 py-2 mb-2'>
               <img src={require('../certImages/JavaScript Certification.jpg')} />
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
               <h3 className='fontSecondary text-center my-3'>JavaScript Programming</h3>
             </div>
-            <div className='skillBox rounded col-md-3 col-11 py-2 mb-2'>
+            <div className='skillBox rounded col-md-4 col-11 py-2 mb-2'>
               <img src={require('../certImages/HTML CSS Certification.jpg')} />
+              <div className="divider mt-4 mb-2 w-50 mx-auto"></div>
               <h3 className='fontSecondary text-center my-3'>HTML & CSS Development</h3>
             </div>
           </div>

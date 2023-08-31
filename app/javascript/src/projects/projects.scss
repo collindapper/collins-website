@@ -3,14 +3,14 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   opacity: 0.88;
-  color: #061e45;
+  color: #121212;
 }
 
 .fontSecondary {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   opacity: 0.88;
-  color: #c3e3eb;
+  color: #faf9f6;
 }
 
 @media (min-width: 768px) {
@@ -22,17 +22,31 @@
 }
 
 body {
-  background: 
-  linear-gradient(to bottom, #36454F, #36454F);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  height: 100%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 // PROJECTS PAGE
 .heading {
-  text-shadow: -5px 0 #061e45;
+  text-shadow: -5px 0 #121212;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   opacity: 0.88;
-  color: #c3e3eb;
+  color: #faf9f6;
 }
 
 .project-image {
@@ -80,6 +94,13 @@ body {
 }
 
 /* Style the front side (fallback if image is missing) */
+.websiteImg {
+  background-image: url(../images/website.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #faf9f6;
+}
+
 .airbnbImg {
   background-image: url(../images/Airbnb.jpg);
   background-size: cover;
@@ -159,19 +180,13 @@ body {
 }
 
 /* Style the back side */
-.flip-card-back {
-  background-color: #061e45;
-  color: #121212;
-  transform: rotateY(180deg);
-} 
-
 a.viewRepo {
-  color: #061e45;
+  color: #121212;
   width: 100%;
-  border: 1px solid #061e45;
+  border: 1px solid #121212;
 }
 
 a.viewRepo:hover {
-  color: #36454F;
-  background-color: #061e45;
+  color: #faf9f6;
+  background-color: #121212;
 }

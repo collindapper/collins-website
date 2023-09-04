@@ -61,7 +61,7 @@ class Layout extends React.Component {
                     <a className="nav-link text-black" href='/'>Home</a>
                   </li>
                   <li className="nav-item fontNavigation mx-auto">
-                    <a className="nav-link text-black" href='/about'>About</a>
+                    <a className="nav-link text-black" href='/about'>Experience</a>
                   </li>
                   <li className="nav-item fontNavigation mx-auto">
                     <a className="nav-link text-black" href='/projects'>Projects</a>
@@ -90,7 +90,7 @@ class Layout extends React.Component {
                     <a className="nav-link text-black fontNavigation" href="/">Home</a>
                   </li>
                   <li className="nav-item fontNavigation text-start">
-                    <a className="nav-link text-black fontNavigation" href="/about">About</a>
+                    <a className="nav-link text-black fontNavigation" href="/about">Experience</a>
                   </li>
                   <li className="nav-item fontNavigation text-start">
                     <a className="nav-link text-black fontNavigation" href="/projects">Projects</a>

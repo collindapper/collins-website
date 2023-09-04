@@ -42,15 +42,15 @@ class Home extends React.Component {
         <div className="d-flex row justify-content-around mx-3 aboutTilesContainer">
           <div className="d-flex col-12 col-lg-4 aboutTiles justify-content-center mt-3 mb-5">
             <i className="fa-brands fa-square-js aboutIconsJs display-4 d-flex justify-content-center"></i>
-            <h4 className="my-5 py-5 fontSecondary tileInfo text-center">I am an adaptive, creative, and certified Junior Software Developer with proficiency in Back-end programming languages, JavaScript and Ruby...</h4>
+            <h4 className="my-5 py-5 fontSecondary tileInfo text-center">I am an adaptive, creative, and certified Junior Software Developer with proficiency in Back-end programming languages, JavaScript and Ruby.</h4>
           </div>
           <div className="d-flex col-12 col-lg-3 aboutTiles border justify-content-center mt-3 mb-5">
             <i className="fa-brands fa-react aboutIconsReact display-4 d-flex justify-content-center"></i>
-            <h4 className="my-5 py-5 fontSecondary tileInfo text-center">knowledgeable in front-end programming languages and frameworks such as: HTML, CSS, and ReactJS...</h4>
+            <h4 className="my-5 py-5 fontSecondary tileInfo text-center">knowledgeable in front-end programming languages and frameworks such as: HTML, CSS, and ReactJS.</h4>
           </div>
           <div className="d-flex col-12 col-lg-4 aboutTiles border justify-content-center mt-3 mb-5">
             <i className="fa-brands fa-square-github aboutIconsGithub display-4 d-flex justify-content-center"></i>
-            <h4 className="my-5 py-5 fontSecondary tileInfo text-center">Familiar with basics of computing and database use, as well as, conducting user research and collaborating with developers to build dynamic websites...</h4>
+            <h4 className="my-5 py-5 fontSecondary tileInfo text-center">Familiar with concepts of computing and database use, as well as, conducting user research and collaborating with developers to build dynamic websites.</h4>
           </div>
         </div>
 
